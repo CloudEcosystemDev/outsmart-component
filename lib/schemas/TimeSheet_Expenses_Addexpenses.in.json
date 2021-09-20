@@ -1,0 +1,229 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "test": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 1
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "TimeSheet-Expenses-AddexpensesRequest",
+                "required": [
+                    "pre_cus_id",
+                    "pre_project_nr",
+                    "pre_project_activity_nr",
+                    "pre_code",
+                    "pre_description",
+                    "pre_amount",
+                    "pre_vat_code",
+                    "pre_cost_price",
+                    "pre_gross_sale_price",
+                    "pre_sale_price",
+                    "pre_timestamp_added",
+                    "pre_timestamp_modified",
+                    "pre_timestamp_approved",
+                    "pre_timestamp_rejected",
+                    "pre_status",
+                    "pre_employee_nr",
+                    "pre_debtor_nr",
+                    "pre_billable",
+                    "pre_attachment_name",
+                    "pre_attachment",
+                    "pre_category",
+                    "pre_date",
+                    "pre_created_by",
+                    "pre_modified_by",
+                    "pre_approved_by",
+                    "pre_rejected_by",
+                    "pre_rejected_reason"
+                ],
+                "type": "object",
+                "properties": {
+                    "pre_cus_id": {
+                        "type": "string"
+                    },
+                    "pre_project_nr": {
+                        "type": "string"
+                    },
+                    "pre_project_activity_nr": {
+                        "type": "string"
+                    },
+                    "pre_code": {
+                        "type": "string"
+                    },
+                    "pre_description": {
+                        "type": "string"
+                    },
+                    "pre_amount": {
+                        "type": "string"
+                    },
+                    "pre_vat_code": {
+                        "type": "string"
+                    },
+                    "pre_cost_price": {
+                        "type": "string"
+                    },
+                    "pre_gross_sale_price": {
+                        "type": "string"
+                    },
+                    "pre_sale_price": {
+                        "type": "string"
+                    },
+                    "pre_timestamp_added": {
+                        "type": "string"
+                    },
+                    "pre_timestamp_modified": {
+                        "type": "string"
+                    },
+                    "pre_timestamp_approved": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pre_timestamp_rejected": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pre_status": {
+                        "type": "string"
+                    },
+                    "pre_employee_nr": {
+                        "type": "string"
+                    },
+                    "pre_debtor_nr": {
+                        "type": "string"
+                    },
+                    "pre_billable": {
+                        "type": "string"
+                    },
+                    "pre_attachment_name": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pre_attachment": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pre_category": {
+                        "type": "string"
+                    },
+                    "pre_date": {
+                        "type": "string"
+                    },
+                    "pre_created_by": {
+                        "type": "string"
+                    },
+                    "pre_modified_by": {
+                        "type": "string"
+                    },
+                    "pre_approved_by": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pre_rejected_by": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pre_rejected_reason": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "pre_cus_id": "78",
+                    "pre_project_nr": "",
+                    "pre_project_activity_nr": "",
+                    "pre_code": "0102",
+                    "pre_description": "Samsung Tv",
+                    "pre_amount": "1.00",
+                    "pre_vat_code": "",
+                    "pre_cost_price": "0.00",
+                    "pre_gross_sale_price": "0.00",
+                    "pre_sale_price": "780.00",
+                    "pre_timestamp_added": "2020-02-25 10:15:26",
+                    "pre_timestamp_modified": "2020-02-25 10:15:26",
+                    "pre_timestamp_approved": null,
+                    "pre_timestamp_rejected": null,
+                    "pre_status": "0",
+                    "pre_employee_nr": "13",
+                    "pre_debtor_nr": "",
+                    "pre_billable": "1",
+                    "pre_attachment_name": null,
+                    "pre_attachment": null,
+                    "pre_category": "",
+                    "pre_date": "2020-02-25",
+                    "pre_created_by": "Quooker",
+                    "pre_modified_by": "Quooker",
+                    "pre_approved_by": null,
+                    "pre_rejected_by": null,
+                    "pre_rejected_reason": null
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "pre_cus_id": "78",
+                    "pre_project_nr": "",
+                    "pre_project_activity_nr": "",
+                    "pre_code": "0102",
+                    "pre_description": "Samsung Tv",
+                    "pre_amount": "1.00",
+                    "pre_vat_code": "",
+                    "pre_cost_price": "0.00",
+                    "pre_gross_sale_price": "0.00",
+                    "pre_sale_price": "780.00",
+                    "pre_timestamp_added": "2020-02-25 10:15:26",
+                    "pre_timestamp_modified": "2020-02-25 10:15:26",
+                    "pre_timestamp_approved": null,
+                    "pre_timestamp_rejected": null,
+                    "pre_status": "0",
+                    "pre_employee_nr": "13",
+                    "pre_debtor_nr": "",
+                    "pre_billable": "1",
+                    "pre_attachment_name": null,
+                    "pre_attachment": null,
+                    "pre_category": "",
+                    "pre_date": "2020-02-25",
+                    "pre_created_by": "Quooker",
+                    "pre_modified_by": "Quooker",
+                    "pre_approved_by": null,
+                    "pre_rejected_by": null,
+                    "pre_rejected_reason": null
+                }
+            ]
+        },
+        "key__": {
+            "required": true,
+            "type": "string",
+            "example": "hrs_emp_nr"
+        },
+        "value__": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 13
+        },
+        "operator__": {
+            "required": true,
+            "type": "string",
+            "example": "eq"
+        }
+    }
+}

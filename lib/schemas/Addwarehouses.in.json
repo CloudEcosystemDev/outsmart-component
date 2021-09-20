@@ -1,0 +1,120 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddwarehousesRequest",
+                "required": [
+                    "wse_code",
+                    "wse_wse_code",
+                    "wse_type",
+                    "wse_image",
+                    "wse_order_message",
+                    "wse_employee_nr",
+                    "wse_description",
+                    "wse_external_id",
+                    "wse_date_start",
+                    "wse_date_end",
+                    "wse_date_certification",
+                    "wse_supplier",
+                    "wse_remark"
+                ],
+                "type": "object",
+                "properties": {
+                    "wse_code": {
+                        "type": "string"
+                    },
+                    "wse_wse_code": {
+                        "type": "string"
+                    },
+                    "wse_type": {
+                        "type": "string"
+                    },
+                    "wse_image": {
+                        "type": "string"
+                    },
+                    "wse_order_message": {
+                        "type": "string"
+                    },
+                    "wse_employee_nr": {
+                        "type": "string"
+                    },
+                    "wse_description": {
+                        "type": "string"
+                    },
+                    "wse_external_id": {
+                        "type": "string"
+                    },
+                    "wse_date_start": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "wse_date_end": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "wse_date_certification": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "wse_supplier": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "wse_remark": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "wse_code": "0102",
+                    "wse_wse_code": "",
+                    "wse_type": "BUILDING",
+                    "wse_image": "http://office.out-smart.test/files/Q2EvelkvWjh3cWhiRnIyaCttZWpUNENoeExUTXJ4Z2xqbFVkR21oMDFmbz0=/cU9GSzZOeUZJTWxJNUhwWXErZXFwMjAzNysrU00vUFNQS2JCSmFJZjhJVlFTTVdBbmhPeDNsZHA5VWs3dE5TRTVEV1FiS1pHWEJ4V1Z1ZEpIenFFdDl4bnREclkxNWN3VXBoaEsyK2xFSEk9/MGF1OFd2MGVSeERnenhZbndmK3VZdz09/LzNJQUNuM1BkVFUwbGhnRVBnNjVLaXp4MHllMkIwVTgwdXZ3cDBXTnpMYz0=/VTgvS2RlR2JVR1RQUDNCa0w1MHpWa21rN2dvWU9kNitONzhWZkZDRE93R05tczBKVW4ySXVDazl4dXlMMU1hUg==/SUpPK0VabkRLUDFtb2M0LzhpZVplMGNYRzJLckIvK3luNDRpcE52a3dIOXI0Sm5kdDZQS0FGSk9vVlBWMTg2Uw==/MGF1OFd2MGVSeERnenhZbndmK3VZdz09/1625141818_demo_qr_gray.png",
+                    "wse_order_message": "",
+                    "wse_employee_nr": "",
+                    "wse_description": "Magazijn Eelco",
+                    "wse_external_id": "f037edce-a649-462a-b077-2b2d06062704",
+                    "wse_date_start": null,
+                    "wse_date_end": null,
+                    "wse_date_certification": null,
+                    "wse_supplier": null,
+                    "wse_remark": ""
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "wse_code": "0102",
+                    "wse_wse_code": "",
+                    "wse_type": "BUILDING",
+                    "wse_image": "http://office.out-smart.test/files/Q2EvelkvWjh3cWhiRnIyaCttZWpUNENoeExUTXJ4Z2xqbFVkR21oMDFmbz0=/cU9GSzZOeUZJTWxJNUhwWXErZXFwMjAzNysrU00vUFNQS2JCSmFJZjhJVlFTTVdBbmhPeDNsZHA5VWs3dE5TRTVEV1FiS1pHWEJ4V1Z1ZEpIenFFdDl4bnREclkxNWN3VXBoaEsyK2xFSEk9/MGF1OFd2MGVSeERnenhZbndmK3VZdz09/LzNJQUNuM1BkVFUwbGhnRVBnNjVLaXp4MHllMkIwVTgwdXZ3cDBXTnpMYz0=/VTgvS2RlR2JVR1RQUDNCa0w1MHpWa21rN2dvWU9kNitONzhWZkZDRE93R05tczBKVW4ySXVDazl4dXlMMU1hUg==/SUpPK0VabkRLUDFtb2M0LzhpZVplMGNYRzJLckIvK3luNDRpcE52a3dIOXI0Sm5kdDZQS0FGSk9vVlBWMTg2Uw==/MGF1OFd2MGVSeERnenhZbndmK3VZdz09/1625141818_demo_qr_gray.png",
+                    "wse_order_message": "",
+                    "wse_employee_nr": "",
+                    "wse_description": "Magazijn Eelco",
+                    "wse_external_id": "f037edce-a649-462a-b077-2b2d06062704",
+                    "wse_date_start": null,
+                    "wse_date_end": null,
+                    "wse_date_certification": null,
+                    "wse_supplier": null,
+                    "wse_remark": ""
+                }
+            ]
+        }
+    }
+}

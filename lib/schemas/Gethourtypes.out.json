@@ -1,0 +1,65 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response4",
+                "required": [
+                    "code",
+                    "name",
+                    "cost_booking",
+                    "sale_booking",
+                    "sale_price",
+                    "cost_price",
+                    "active"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "cost_booking": {
+                        "type": "string"
+                    },
+                    "sale_booking": {
+                        "type": "string"
+                    },
+                    "sale_price": {
+                        "type": "string"
+                    },
+                    "cost_price": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": "001",
+                    "name": "Normale uren",
+                    "cost_booking": "0",
+                    "sale_booking": "0",
+                    "sale_price": "50.00",
+                    "cost_price": "25.00",
+                    "active": "1"
+                }
+            },
+            "description": ""
+        }
+    }
+}

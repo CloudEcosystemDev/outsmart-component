@@ -1,0 +1,200 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddtasksRequest",
+                "required": [
+                    "tsk_tsk_id",
+                    "tsk_type",
+                    "tsk_name",
+                    "tsk_description",
+                    "tsk_reference",
+                    "tsk_category",
+                    "tsk_icon",
+                    "tsk_owner",
+                    "tsk_assigned_to",
+                    "tsk_priority",
+                    "tsk_status",
+                    "tsk_debtor_nr",
+                    "tsk_address_nr",
+                    "tsk_contact_nr",
+                    "tsk_timestamp_due",
+                    "tsk_timestamp_create",
+                    "tsk_timestamp_mutate",
+                    "tsk_timestamp_started",
+                    "tsk_timestamp_completed",
+                    "tsk_timestamp_start",
+                    "tsk_link",
+                    "tsk_project_nr",
+                    "tsk_project_activity_nr",
+                    "tsk_order_nr",
+                    "tsk_invoice_number",
+                    "tsk_quotation_number"
+                ],
+                "type": "object",
+                "properties": {
+                    "tsk_tsk_id": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_type": {
+                        "type": "string"
+                    },
+                    "tsk_name": {
+                        "type": "string"
+                    },
+                    "tsk_description": {
+                        "type": "string"
+                    },
+                    "tsk_reference": {
+                        "type": "string"
+                    },
+                    "tsk_category": {
+                        "type": "string"
+                    },
+                    "tsk_icon": {
+                        "type": "string"
+                    },
+                    "tsk_owner": {
+                        "type": "string"
+                    },
+                    "tsk_assigned_to": {
+                        "type": "string"
+                    },
+                    "tsk_priority": {
+                        "type": "string"
+                    },
+                    "tsk_status": {
+                        "type": "string"
+                    },
+                    "tsk_debtor_nr": {
+                        "type": "string"
+                    },
+                    "tsk_address_nr": {
+                        "type": "string"
+                    },
+                    "tsk_contact_nr": {
+                        "type": "string"
+                    },
+                    "tsk_timestamp_due": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_create": {
+                        "type": "string"
+                    },
+                    "tsk_timestamp_mutate": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_started": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_completed": {
+                        "type": "string"
+                    },
+                    "tsk_timestamp_start": {
+                        "type": "string"
+                    },
+                    "tsk_link": {
+                        "type": "string"
+                    },
+                    "tsk_project_nr": {
+                        "type": "string"
+                    },
+                    "tsk_project_activity_nr": {
+                        "type": "string"
+                    },
+                    "tsk_order_nr": {
+                        "type": "string"
+                    },
+                    "tsk_invoice_number": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_quotation_number": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "tsk_tsk_id": null,
+                    "tsk_type": "TASK",
+                    "tsk_name": "tsk_name",
+                    "tsk_description": "Gesproken met:<span style=\"color: rgb(152, 118, 170); background-color: rgb(43, 43, 43); font-family: \" jetbrains=\"\" mono\",=\"\" monospace;=\"\" font-size:=\"\" 13px;=\"\" letter-spacing:=\"\" 0.015rem;\"=\"\">CALL_LOG_DEFAULT_TEXT</span><br>\n<br>\nKlantvraag:<br>\n<br>\nUitgevoerde stappen om het op te lossen/escaleren:",
+                    "tsk_reference": "06463214188",
+                    "tsk_category": "CALL",
+                    "tsk_icon": "phone",
+                    "tsk_owner": "",
+                    "tsk_assigned_to": "",
+                    "tsk_priority": "NORMAL",
+                    "tsk_status": "IN_PROGRESS",
+                    "tsk_debtor_nr": "1010101010319",
+                    "tsk_address_nr": "",
+                    "tsk_contact_nr": "",
+                    "tsk_timestamp_due": null,
+                    "tsk_timestamp_create": "2021-03-18 15:31:26",
+                    "tsk_timestamp_mutate": null,
+                    "tsk_timestamp_started": null,
+                    "tsk_timestamp_completed": "2021-04-23 14:30:07",
+                    "tsk_timestamp_start": "2021-03-18 15:31:26",
+                    "tsk_link": "",
+                    "tsk_project_nr": "",
+                    "tsk_project_activity_nr": "",
+                    "tsk_order_nr": "",
+                    "tsk_invoice_number": null,
+                    "tsk_quotation_number": null
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "tsk_tsk_id": null,
+                    "tsk_type": "TASK",
+                    "tsk_name": "tsk_name",
+                    "tsk_description": "Gesproken met:<span style=\"color: rgb(152, 118, 170); background-color: rgb(43, 43, 43); font-family: \" jetbrains=\"\" mono\",=\"\" monospace;=\"\" font-size:=\"\" 13px;=\"\" letter-spacing:=\"\" 0.015rem;\"=\"\">CALL_LOG_DEFAULT_TEXT</span><br>\n<br>\nKlantvraag:<br>\n<br>\nUitgevoerde stappen om het op te lossen/escaleren:",
+                    "tsk_reference": "06463214188",
+                    "tsk_category": "CALL",
+                    "tsk_icon": "phone",
+                    "tsk_owner": "",
+                    "tsk_assigned_to": "",
+                    "tsk_priority": "NORMAL",
+                    "tsk_status": "IN_PROGRESS",
+                    "tsk_debtor_nr": "1010101010319",
+                    "tsk_address_nr": "",
+                    "tsk_contact_nr": "",
+                    "tsk_timestamp_due": null,
+                    "tsk_timestamp_create": "2021-03-18 15:31:26",
+                    "tsk_timestamp_mutate": null,
+                    "tsk_timestamp_started": null,
+                    "tsk_timestamp_completed": "2021-04-23 14:30:07",
+                    "tsk_timestamp_start": "2021-03-18 15:31:26",
+                    "tsk_link": "",
+                    "tsk_project_nr": "",
+                    "tsk_project_activity_nr": "",
+                    "tsk_order_nr": "",
+                    "tsk_invoice_number": null,
+                    "tsk_quotation_number": null
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "row_id": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 2084647
+        },
+        "ClearMaterials": {
+            "required": true,
+            "type": "boolean",
+            "example": true
+        },
+        "ProcessMaterials": {
+            "required": true,
+            "type": "boolean",
+            "example": true
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "UpdateWorkorder(Materials)Request",
+                "required": [
+                    "MaterialCode",
+                    "MaterialNr",
+                    "MaterialPrice",
+                    "MaterialName",
+                    "MaterialUnit",
+                    "MaterialWarehouseCode",
+                    "MaterialWarrantyCode",
+                    "MaterialDiscountPercentage",
+                    "MaterialOriginalPrice",
+                    "MaterialType",
+                    "MaterialFreeField1",
+                    "MaterialFreeField2",
+                    "MaterialFreeField3",
+                    "MaterialFreeField4",
+                    "MaterialFreeField5"
+                ],
+                "type": "object",
+                "properties": {
+                    "MaterialCode": {
+                        "type": "string"
+                    },
+                    "MaterialNr": {
+                        "type": "string"
+                    },
+                    "MaterialPrice": {
+                        "type": "string"
+                    },
+                    "MaterialName": {
+                        "type": "string"
+                    },
+                    "MaterialUnit": {
+                        "type": "string"
+                    },
+                    "MaterialWarehouseCode": {
+                        "type": "string"
+                    },
+                    "MaterialWarrantyCode": {
+                        "type": "string"
+                    },
+                    "MaterialDiscountPercentage": {
+                        "type": "string"
+                    },
+                    "MaterialOriginalPrice": {
+                        "type": "string"
+                    },
+                    "MaterialType": {
+                        "type": "string"
+                    },
+                    "MaterialFreeField1": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "MaterialFreeField2": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "MaterialFreeField3": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "MaterialFreeField4": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "MaterialFreeField5": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "MaterialCode": "A786878",
+                    "MaterialNr": "2",
+                    "MaterialPrice": "233,00",
+                    "MaterialName": "Kleinmateriaal",
+                    "MaterialUnit": "M2",
+                    "MaterialWarehouseCode": "WAREHOUSE1",
+                    "MaterialWarrantyCode": "WARRANTY1",
+                    "MaterialDiscountPercentage": "100",
+                    "MaterialOriginalPrice": "150",
+                    "MaterialType": "TEstTest",
+                    "MaterialFreeField1": null,
+                    "MaterialFreeField2": null,
+                    "MaterialFreeField3": null,
+                    "MaterialFreeField4": null,
+                    "MaterialFreeField5": null
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "MaterialCode": "A786878",
+                    "MaterialNr": "2",
+                    "MaterialPrice": "233,00",
+                    "MaterialName": "Kleinmateriaal",
+                    "MaterialUnit": "M2",
+                    "MaterialWarehouseCode": "WAREHOUSE1",
+                    "MaterialWarrantyCode": "WARRANTY1",
+                    "MaterialDiscountPercentage": "100",
+                    "MaterialOriginalPrice": "150",
+                    "MaterialType": "TEstTest",
+                    "MaterialFreeField1": null,
+                    "MaterialFreeField2": null,
+                    "MaterialFreeField3": null,
+                    "MaterialFreeField4": null,
+                    "MaterialFreeField5": null
+                }
+            ]
+        }
+    }
+}

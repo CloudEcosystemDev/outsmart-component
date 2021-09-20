@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddpartsRequest",
+                "required": [
+                    "prt_code",
+                    "prt_name",
+                    "prt_sup_code",
+                    "prt_value",
+                    "prt_image"
+                ],
+                "type": "object",
+                "properties": {
+                    "prt_code": {
+                        "type": "string"
+                    },
+                    "prt_name": {
+                        "type": "string"
+                    },
+                    "prt_sup_code": {
+                        "type": "string"
+                    },
+                    "prt_value": {
+                        "type": "string"
+                    },
+                    "prt_image": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "prt_code": "PRT001",
+                    "prt_name": "Remschijf",
+                    "prt_sup_code": "001",
+                    "prt_value": "80.00",
+                    "prt_image": ""
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "prt_code": "PRT001",
+                    "prt_name": "Remschijf",
+                    "prt_sup_code": "001",
+                    "prt_value": "80.00",
+                    "prt_image": ""
+                }
+            ]
+        }
+    }
+}

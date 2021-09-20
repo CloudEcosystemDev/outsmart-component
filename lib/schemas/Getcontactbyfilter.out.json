@@ -1,0 +1,55 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response49",
+                "required": [
+                    "cpn_debtor_nr",
+                    "cpn_code",
+                    "cpn_name",
+                    "cpn_phone",
+                    "cpn_email"
+                ],
+                "type": "object",
+                "properties": {
+                    "cpn_debtor_nr": {
+                        "type": "string"
+                    },
+                    "cpn_code": {
+                        "type": "string"
+                    },
+                    "cpn_name": {
+                        "type": "string"
+                    },
+                    "cpn_phone": {
+                        "type": "string"
+                    },
+                    "cpn_email": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "cpn_debtor_nr": "82",
+                    "cpn_code": "1",
+                    "cpn_name": "Hans",
+                    "cpn_phone": "020 2298144",
+                    "cpn_email": "email@email.com"
+                }
+            },
+            "description": ""
+        }
+    }
+}

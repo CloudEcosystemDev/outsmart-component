@@ -1,0 +1,113 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddtransactionsRequest",
+                "required": [
+                    "int_inv_id",
+                    "int_transaction_id",
+                    "int_external_transaction_id",
+                    "int_description",
+                    "int_amount",
+                    "int_type",
+                    "int_type_description",
+                    "int_user"
+                ],
+                "type": "object",
+                "properties": {
+                    "int_inv_id": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "int_transaction_id": {
+                        "type": "string"
+                    },
+                    "int_external_transaction_id": {
+                        "type": "string"
+                    },
+                    "int_description": {
+                        "type": "string"
+                    },
+                    "int_amount": {
+                        "type": "string"
+                    },
+                    "int_type": {
+                        "type": "string"
+                    },
+                    "int_type_description": {
+                        "type": "string"
+                    },
+                    "int_user": {
+                        "type": "string"
+                    },
+                    "int_timestamp": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "int_inv_id": null,
+                    "int_transaction_id": "0000009CSD572CE75E21119",
+                    "int_external_transaction_id": "RABO1212348797128314512435",
+                    "int_description": "Bank transaction",
+                    "int_amount": "100.43",
+                    "int_type": "BANK",
+                    "int_type_description": "",
+                    "int_user": "Fremke",
+                    "int_timestamp": "2018-07-31 11:33:45"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "int_inv_id": null,
+                    "int_transaction_id": "0000009CSD572CE75E21119",
+                    "int_external_transaction_id": "RABO1212348797128314512435",
+                    "int_description": "Bank transaction",
+                    "int_amount": "100.43",
+                    "int_type": "BANK",
+                    "int_type_description": "",
+                    "int_user": "Fremke",
+                    "int_timestamp": "2018-07-31 11:33:45"
+                },
+                {
+                    "int_inv_id": "164",
+                    "int_transaction_id": "0000009B601572CE75E21111",
+                    "int_external_transaction_id": "",
+                    "int_description": "Cash transaction",
+                    "int_amount": "50.00",
+                    "int_type": "CASH",
+                    "int_type_description": "",
+                    "int_user": "Femke",
+                    "int_timestamp": "2018-07-31 13:22:38"
+                },
+                {
+                    "int_inv_id": "164",
+                    "int_transaction_id": "0000005B601172CE75E21418",
+                    "int_external_transaction_id": "IZETTLE5415642351431123231",
+                    "int_description": "iZettle payment",
+                    "int_amount": "121.00",
+                    "int_type": "iZettle",
+                    "int_type_description": "",
+                    "int_user": "Femke"
+                }
+            ]
+        }
+    }
+}

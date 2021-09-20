@@ -1,0 +1,82 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddregionsRequest",
+                "required": [
+                    "reg_code",
+                    "reg_name",
+                    "reg_zip_start",
+                    "reg_zip_end",
+                    "reg_city",
+                    "reg_country"
+                ],
+                "type": "object",
+                "properties": {
+                    "reg_code": {
+                        "type": "string"
+                    },
+                    "reg_name": {
+                        "type": "string"
+                    },
+                    "reg_zip_start": {
+                        "type": "string"
+                    },
+                    "reg_zip_end": {
+                        "type": "string"
+                    },
+                    "reg_city": {
+                        "type": "string"
+                    },
+                    "reg_country": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "reg_code": "1",
+                    "reg_name": "Utrecht 32-33",
+                    "reg_zip_start": "3200",
+                    "reg_zip_end": "3500",
+                    "reg_city": "",
+                    "reg_country": ""
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "reg_code": "1",
+                    "reg_name": "Utrecht 32-33",
+                    "reg_zip_start": "3200",
+                    "reg_zip_end": "3500",
+                    "reg_city": "",
+                    "reg_country": ""
+                },
+                {
+                    "reg_code": "2",
+                    "reg_name": "Utrecht",
+                    "reg_zip_start": "0",
+                    "reg_zip_end": "0",
+                    "reg_city": "Utrecht",
+                    "reg_country": ""
+                }
+            ]
+        }
+    }
+}

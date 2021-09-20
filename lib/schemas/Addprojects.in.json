@@ -1,0 +1,116 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddprojectsRequest",
+                "required": [
+                    "code",
+                    "code_ext",
+                    "debtor_number",
+                    "status",
+                    "name",
+                    "description",
+                    "progress",
+                    "date_start",
+                    "date_end",
+                    "active"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "code_ext": {
+                        "type": "string"
+                    },
+                    "debtor_number": {
+                        "type": "string"
+                    },
+                    "debtor_number_invoice": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "progress": {
+                        "type": "string"
+                    },
+                    "date_start": {
+                        "type": "string"
+                    },
+                    "date_end": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": "N001",
+                    "code_ext": "",
+                    "debtor_number": "33",
+                    "debtor_number_invoice": "33",
+                    "status": "Nieuw",
+                    "name": "Project op nacalculatiebasis",
+                    "description": "Dit project zal op nacalculatiebasis worden gefactureerd. Tarief voor dit project is 100 eur per uur. Inkopen worden met een opslag van 10% doorgefactureerd.",
+                    "progress": "0",
+                    "date_start": "2013-10-01",
+                    "date_end": null,
+                    "active": "1"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "code": "N001",
+                    "code_ext": "",
+                    "debtor_number": "33",
+                    "debtor_number_invoice": "33",
+                    "status": "Nieuw",
+                    "name": "Project op nacalculatiebasis",
+                    "description": "Dit project zal op nacalculatiebasis worden gefactureerd. Tarief voor dit project is 100 eur per uur. Inkopen worden met een opslag van 10% doorgefactureerd.",
+                    "progress": "0",
+                    "date_start": "2013-10-01",
+                    "date_end": null,
+                    "active": "1"
+                },
+                {
+                    "code": "P002",
+                    "code_ext": "",
+                    "debtor_number": "3",
+                    "status": "Nieuw",
+                    "name": "Opdracht met voorschot",
+                    "description": "Project is begroot op 100 uren en wordt tegen vaste prijs van 10.000 eur gefactureerd. 50% zal vooruit worden gefactureerd.",
+                    "progress": "0",
+                    "date_start": "2013-10-01",
+                    "date_end": null,
+                    "active": "1"
+                }
+            ]
+        }
+    }
+}

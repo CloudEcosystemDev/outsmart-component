@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "val_entity": {
+            "required": true,
+            "type": "string",
+            "example": "WORKORDER"
+        },
+        "val_primary": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 40
+        },
+        "val_column": {
+            "required": true,
+            "type": "string",
+            "example": "Reference"
+        },
+        "val_value_15": {
+            "required": true,
+            "type": "string"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        }
+    }
+}

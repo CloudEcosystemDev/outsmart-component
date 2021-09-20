@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "PostlocationsRequest",
+                "required": [
+                    "lat",
+                    "long",
+                    "identifier",
+                    "type"
+                ],
+                "type": "object",
+                "properties": {
+                    "lat": {
+                        "type": "string"
+                    },
+                    "long": {
+                        "type": "string"
+                    },
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "lat": "52.1175835",
+                    "long": "5.036439",
+                    "identifier": "EMP001",
+                    "type": "0"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "lat": "52.1175835",
+                    "long": "5.036439",
+                    "identifier": "EMP001",
+                    "type": "0"
+                },
+                {
+                    "lat": "52.1175836",
+                    "long": "5.0364392",
+                    "identifier": "44-FPS-2",
+                    "type": "1"
+                }
+            ]
+        }
+    }
+}

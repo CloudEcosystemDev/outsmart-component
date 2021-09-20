@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response38",
+                "required": [
+                    "sup_code",
+                    "sup_name",
+                    "sup_image"
+                ],
+                "type": "object",
+                "properties": {
+                    "sup_code": {
+                        "type": "string"
+                    },
+                    "sup_name": {
+                        "type": "string"
+                    },
+                    "sup_image": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "sup_code": "001",
+                    "sup_name": "Pirelli",
+                    "sup_image": ""
+                }
+            },
+            "description": ""
+        }
+    }
+}

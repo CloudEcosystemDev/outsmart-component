@@ -1,0 +1,111 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "Addgeneric_notesRequest",
+                "required": [
+                    "nte_id",
+                    "nte_cus_id",
+                    "nte_entity",
+                    "nte_column",
+                    "nte_primary",
+                    "nte_content",
+                    "nte_created_by",
+                    "nte_modified_by",
+                    "nte_timestamp_created",
+                    "nte_timestamp_modified",
+                    "nte_reference",
+                    "nte_timestamp_read"
+                ],
+                "type": "object",
+                "properties": {
+                    "nte_id": {
+                        "type": "string"
+                    },
+                    "nte_cus_id": {
+                        "type": "string"
+                    },
+                    "nte_entity": {
+                        "type": "string"
+                    },
+                    "nte_column": {
+                        "type": "string"
+                    },
+                    "nte_primary": {
+                        "type": "string"
+                    },
+                    "nte_content": {
+                        "type": "string"
+                    },
+                    "nte_created_by": {
+                        "type": "string"
+                    },
+                    "nte_modified_by": {
+                        "type": "string"
+                    },
+                    "nte_timestamp_created": {
+                        "type": "string"
+                    },
+                    "nte_timestamp_modified": {
+                        "type": "string"
+                    },
+                    "nte_reference": {
+                        "type": "string"
+                    },
+                    "nte_timestamp_read": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "nte_id": "2",
+                    "nte_cus_id": "78",
+                    "nte_entity": "worksheets",
+                    "nte_column": "OrderNr",
+                    "nte_primary": "CUSTOMORDER123",
+                    "nte_content": "<p>test</p>\n",
+                    "nte_created_by": "yoran122@gmail.com",
+                    "nte_modified_by": "yoran122@gmail.com",
+                    "nte_timestamp_created": "2021-09-13 12:06:22",
+                    "nte_timestamp_modified": "2021-09-13 12:06:22",
+                    "nte_reference": "100",
+                    "nte_timestamp_read": null
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "nte_id": "2",
+                    "nte_cus_id": "78",
+                    "nte_entity": "worksheets",
+                    "nte_column": "OrderNr",
+                    "nte_primary": "CUSTOMORDER123",
+                    "nte_content": "<p>test</p>\n",
+                    "nte_created_by": "yoran122@gmail.com",
+                    "nte_modified_by": "yoran122@gmail.com",
+                    "nte_timestamp_created": "2021-09-13 12:06:22",
+                    "nte_timestamp_modified": "2021-09-13 12:06:22",
+                    "nte_reference": "100",
+                    "nte_timestamp_read": null
+                }
+            ]
+        }
+    }
+}

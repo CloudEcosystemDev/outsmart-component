@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response2",
+                "required": [
+                    "cat_code",
+                    "cat_name",
+                    "cat_display",
+                    "cat_cat_code"
+                ],
+                "type": "object",
+                "properties": {
+                    "cat_code": {
+                        "type": "string"
+                    },
+                    "cat_name": {
+                        "type": "string"
+                    },
+                    "cat_display": {
+                        "type": "string"
+                    },
+                    "cat_cat_code": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "cat_code": "001",
+                    "cat_name": "Ijzerwaren",
+                    "cat_display": "1",
+                    "cat_cat_code": ""
+                }
+            },
+            "description": ""
+        }
+    }
+}

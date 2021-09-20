@@ -1,0 +1,70 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response12",
+                "required": [
+                    "adr_debtor_nr",
+                    "adr_code",
+                    "adr_cpn_code",
+                    "adr_line_1",
+                    "adr_zip",
+                    "adr_city",
+                    "adr_country",
+                    "adr_remark"
+                ],
+                "type": "object",
+                "properties": {
+                    "adr_debtor_nr": {
+                        "type": "string"
+                    },
+                    "adr_code": {
+                        "type": "string"
+                    },
+                    "adr_cpn_code": {
+                        "type": "string"
+                    },
+                    "adr_line_1": {
+                        "type": "string"
+                    },
+                    "adr_zip": {
+                        "type": "string"
+                    },
+                    "adr_city": {
+                        "type": "string"
+                    },
+                    "adr_country": {
+                        "type": "string"
+                    },
+                    "adr_remark": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "adr_debtor_nr": "2082092",
+                    "adr_code": "1",
+                    "adr_cpn_code": "3",
+                    "adr_line_1": "Zonnebaan 9",
+                    "adr_zip": "3542 AA",
+                    "adr_city": "Utrecht",
+                    "adr_country": "Nederland",
+                    "adr_remark": "Crediteurenadministratie"
+                }
+            },
+            "description": ""
+        }
+    }
+}

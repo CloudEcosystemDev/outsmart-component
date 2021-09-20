@@ -1,0 +1,166 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddprojectsRequest1",
+                "required": [
+                    "pra_id",
+                    "pra_cus_id",
+                    "pra_pro_code",
+                    "pra_code",
+                    "pra_pra_code",
+                    "pra_name",
+                    "pra_description",
+                    "pra_date_start",
+                    "pra_date_end",
+                    "pra_order",
+                    "pra_status",
+                    "pra_budget_hours",
+                    "pra_budget_hours_used",
+                    "pra_budget_costs",
+                    "pra_budget_costs_used",
+                    "pra_budget_revenue",
+                    "pra_budget_revenue_used",
+                    "pra_material_type",
+                    "pra_material_count",
+                    "pra_visible_planboard"
+                ],
+                "type": "object",
+                "properties": {
+                    "pra_id": {
+                        "type": "string"
+                    },
+                    "pra_cus_id": {
+                        "type": "string"
+                    },
+                    "pra_pro_code": {
+                        "type": "string"
+                    },
+                    "pra_code": {
+                        "type": "string"
+                    },
+                    "pra_pra_code": {
+                        "type": "string"
+                    },
+                    "pra_name": {
+                        "type": "string"
+                    },
+                    "pra_description": {
+                        "type": "string"
+                    },
+                    "pra_date_start": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_date_end": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_order": {
+                        "type": "string"
+                    },
+                    "pra_status": {
+                        "type": "string"
+                    },
+                    "pra_budget_hours": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_budget_hours_used": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_budget_costs": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_budget_costs_used": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_budget_revenue": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_budget_revenue_used": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "pra_material_type": {
+                        "type": "string"
+                    },
+                    "pra_material_count": {
+                        "type": "string"
+                    },
+                    "pra_visible_planboard": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "pra_id": "1",
+                    "pra_cus_id": "78",
+                    "pra_pro_code": "1",
+                    "pra_code": "3",
+                    "pra_pra_code": "",
+                    "pra_name": "Test fase",
+                    "pra_description": "",
+                    "pra_date_start": null,
+                    "pra_date_end": null,
+                    "pra_order": "0",
+                    "pra_status": "",
+                    "pra_budget_hours": null,
+                    "pra_budget_hours_used": null,
+                    "pra_budget_costs": null,
+                    "pra_budget_costs_used": null,
+                    "pra_budget_revenue": null,
+                    "pra_budget_revenue_used": null,
+                    "pra_material_type": "",
+                    "pra_material_count": "0",
+                    "pra_visible_planboard": "0"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "pra_id": "1",
+                    "pra_cus_id": "78",
+                    "pra_pro_code": "1",
+                    "pra_code": "3",
+                    "pra_pra_code": "",
+                    "pra_name": "Test fase",
+                    "pra_description": "",
+                    "pra_date_start": null,
+                    "pra_date_end": null,
+                    "pra_order": "0",
+                    "pra_status": "",
+                    "pra_budget_hours": null,
+                    "pra_budget_hours_used": null,
+                    "pra_budget_costs": null,
+                    "pra_budget_costs_used": null,
+                    "pra_budget_revenue": null,
+                    "pra_budget_revenue_used": null,
+                    "pra_material_type": "",
+                    "pra_material_count": "0",
+                    "pra_visible_planboard": "0"
+                }
+            ]
+        }
+    }
+}

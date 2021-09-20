@@ -1,0 +1,150 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response13",
+                "required": [
+                    "tra_id",
+                    "tra_cus_id",
+                    "tra_emp_nr",
+                    "tra_debtor_nr",
+                    "tra_project_nr",
+                    "tra_project_activity_nr",
+                    "tra_date",
+                    "tra_from",
+                    "tra_to",
+                    "tra_distance",
+                    "tra_description",
+                    "tra_billable",
+                    "tra_status",
+                    "tra_type",
+                    "tra_date_created",
+                    "tra_date_modified",
+                    "tra_date_approved",
+                    "tra_date_rejected",
+                    "tra_created_by",
+                    "tra_modified_by",
+                    "tra_approved_by",
+                    "tra_rejected_by",
+                    "tra_rejected_reason"
+                ],
+                "type": "object",
+                "properties": {
+                    "tra_id": {
+                        "type": "string"
+                    },
+                    "tra_cus_id": {
+                        "type": "string"
+                    },
+                    "tra_emp_nr": {
+                        "type": "string"
+                    },
+                    "tra_debtor_nr": {
+                        "type": "string"
+                    },
+                    "tra_project_nr": {
+                        "type": "string"
+                    },
+                    "tra_project_activity_nr": {
+                        "type": "string"
+                    },
+                    "tra_date": {
+                        "type": "string"
+                    },
+                    "tra_from": {
+                        "type": "string"
+                    },
+                    "tra_to": {
+                        "type": "string"
+                    },
+                    "tra_distance": {
+                        "type": "string"
+                    },
+                    "tra_description": {
+                        "type": "string"
+                    },
+                    "tra_billable": {
+                        "type": "string"
+                    },
+                    "tra_status": {
+                        "type": "string"
+                    },
+                    "tra_type": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tra_date_created": {
+                        "type": "string"
+                    },
+                    "tra_date_modified": {
+                        "type": "string"
+                    },
+                    "tra_date_approved": {
+                        "type": "string"
+                    },
+                    "tra_date_rejected": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tra_created_by": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tra_modified_by": {
+                        "type": "string"
+                    },
+                    "tra_approved_by": {
+                        "type": "string"
+                    },
+                    "tra_rejected_by": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tra_rejected_reason": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "tra_id": "62",
+                    "tra_cus_id": "78",
+                    "tra_emp_nr": "13",
+                    "tra_debtor_nr": "24",
+                    "tra_project_nr": "N21231",
+                    "tra_project_activity_nr": "6",
+                    "tra_date": "2019-10-24",
+                    "tra_from": "Utrecht",
+                    "tra_to": "Amsterdam",
+                    "tra_distance": "35",
+                    "tra_description": "Traveling from Utrecht to Amsterdam and back",
+                    "tra_billable": "1",
+                    "tra_status": "0",
+                    "tra_type": null,
+                    "tra_date_created": "2019-12-31 13:42:37",
+                    "tra_date_modified": "2020-02-10 13:19:49",
+                    "tra_date_approved": "2020-02-10 13:19:49",
+                    "tra_date_rejected": null,
+                    "tra_created_by": null,
+                    "tra_modified_by": "Administrator",
+                    "tra_approved_by": "Administrator",
+                    "tra_rejected_by": null,
+                    "tra_rejected_reason": null
+                }
+            },
+            "description": ""
+        }
+    }
+}

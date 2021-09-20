@@ -1,0 +1,55 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response19",
+                "required": [
+                    "customer_id",
+                    "lat",
+                    "long",
+                    "employee_nr",
+                    "last_seen"
+                ],
+                "type": "object",
+                "properties": {
+                    "customer_id": {
+                        "type": "string"
+                    },
+                    "lat": {
+                        "type": "string"
+                    },
+                    "long": {
+                        "type": "string"
+                    },
+                    "employee_nr": {
+                        "type": "string"
+                    },
+                    "last_seen": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "customer_id": "1205",
+                    "lat": "50.827024870303866",
+                    "long": "6.018792792566475",
+                    "employee_nr": "123",
+                    "last_seen": "2016-04-06 11:30:00"
+                }
+            },
+            "description": ""
+        }
+    }
+}

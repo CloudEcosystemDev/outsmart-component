@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "key": {
+            "required": true,
+            "type": "string",
+            "example": ":key"
+        },
+        "value": {
+            "required": true,
+            "type": "string",
+            "example": ":value"
+        },
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddsolutionsRequest",
+                "required": [
+                    "code",
+                    "description",
+                    "app_enabled"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "app_enabled": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": "HARD_RESET",
+                    "description": "Hard reset",
+                    "app_enabled": "0"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "code": "HARD_RESET",
+                    "description": "Hard reset",
+                    "app_enabled": "0"
+                },
+                {
+                    "code": "SOFT_RESET",
+                    "description": "Soft reset",
+                    "app_enabled": "0"
+                },
+                {
+                    "code": "Update",
+                    "description": "Update",
+                    "app_enabled": "0"
+                }
+            ]
+        }
+    }
+}

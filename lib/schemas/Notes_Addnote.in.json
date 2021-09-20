@@ -1,0 +1,104 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "Notes-AddnoteRequest",
+                "required": [
+                    "esh_cus_id",
+                    "esh_emp_nr",
+                    "esh_hrt_code",
+                    "esh_start",
+                    "esh_end",
+                    "esh_description",
+                    "esh_approved",
+                    "esh_color",
+                    "esh_allday",
+                    "esh_isnote",
+                    "esh_date_modified"
+                ],
+                "type": "object",
+                "properties": {
+                    "esh_cus_id": {
+                        "type": "string"
+                    },
+                    "esh_emp_nr": {
+                        "type": "string"
+                    },
+                    "esh_hrt_code": {
+                        "type": "string"
+                    },
+                    "esh_start": {
+                        "type": "string"
+                    },
+                    "esh_end": {
+                        "type": "string"
+                    },
+                    "esh_description": {
+                        "type": "string"
+                    },
+                    "esh_approved": {
+                        "type": "string"
+                    },
+                    "esh_color": {
+                        "type": "string"
+                    },
+                    "esh_allday": {
+                        "type": "string"
+                    },
+                    "esh_isnote": {
+                        "type": "string"
+                    },
+                    "esh_date_modified": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "esh_cus_id": "78",
+                    "esh_emp_nr": "13",
+                    "esh_hrt_code": "C",
+                    "esh_start": "2020-02-25 13:42:00",
+                    "esh_end": "2020-02-25 15:32:00",
+                    "esh_description": "",
+                    "esh_approved": "0",
+                    "esh_color": "#F4511E",
+                    "esh_allday": "0",
+                    "esh_isnote": "0",
+                    "esh_date_modified": "2020-02-25 11:06:03"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "esh_cus_id": "78",
+                    "esh_emp_nr": "13",
+                    "esh_hrt_code": "C",
+                    "esh_start": "2020-02-25 13:42:00",
+                    "esh_end": "2020-02-25 15:32:00",
+                    "esh_description": "",
+                    "esh_approved": "0",
+                    "esh_color": "#F4511E",
+                    "esh_allday": "0",
+                    "esh_isnote": "0",
+                    "esh_date_modified": "2020-02-25 11:06:03"
+                }
+            ]
+        }
+    }
+}

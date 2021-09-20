@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddworktypesRequest",
+                "required": [
+                    "wrt_name",
+                    "wrt_description",
+                    "wrt_default_minutes",
+                    "wrt_active"
+                ],
+                "type": "object",
+                "properties": {
+                    "wrt_name": {
+                        "type": "string"
+                    },
+                    "wrt_description": {
+                        "type": "string"
+                    },
+                    "wrt_default_minutes": {
+                        "type": "string"
+                    },
+                    "wrt_active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "wrt_name": "Garantie",
+                    "wrt_description": "Garantie werkzaamheden",
+                    "wrt_default_minutes": "60",
+                    "wrt_active": "1"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "wrt_name": "Garantie",
+                    "wrt_description": "Garantie werkzaamheden",
+                    "wrt_default_minutes": "60",
+                    "wrt_active": "1"
+                },
+                {
+                    "wrt_name": "Installatie",
+                    "wrt_description": "Installatie werkzaamheden",
+                    "wrt_default_minutes": "720",
+                    "wrt_active": "1"
+                }
+            ]
+        }
+    }
+}

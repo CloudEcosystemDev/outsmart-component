@@ -1,0 +1,92 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddobjectpartsRequest",
+                "required": [
+                    "opr_obj_code",
+                    "opr_prt_code",
+                    "opr_serial_number",
+                    "opr_description",
+                    "opr_timestamp_installation",
+                    "opr_warranty_months",
+                    "opr_amount",
+                    "val_value_1",
+                    "val_value_2"
+                ],
+                "type": "object",
+                "properties": {
+                    "opr_obj_code": {
+                        "type": "string"
+                    },
+                    "opr_prt_code": {
+                        "type": "string"
+                    },
+                    "opr_serial_number": {
+                        "type": "string"
+                    },
+                    "opr_description": {
+                        "type": "string"
+                    },
+                    "opr_timestamp_installation": {
+                        "type": "string"
+                    },
+                    "opr_warranty_months": {
+                        "type": "string"
+                    },
+                    "opr_amount": {
+                        "type": "string"
+                    },
+                    "val_value_1": {
+                        "type": "string"
+                    },
+                    "val_value_2": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "opr_obj_code": "Object 12",
+                    "opr_prt_code": "001",
+                    "opr_serial_number": "65644456",
+                    "opr_description": "65644456",
+                    "opr_timestamp_installation": "2018-10-11",
+                    "opr_warranty_months": "24",
+                    "opr_amount": "4",
+                    "val_value_1": "Free field 1 value",
+                    "val_value_2": "Free field 1 value"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "opr_obj_code": "Object 12",
+                    "opr_prt_code": "001",
+                    "opr_serial_number": "65644456",
+                    "opr_description": "65644456",
+                    "opr_timestamp_installation": "2018-10-11",
+                    "opr_warranty_months": "24",
+                    "opr_amount": "4",
+                    "val_value_1": "Free field 1 value",
+                    "val_value_2": "Free field 1 value"
+                }
+            ]
+        }
+    }
+}

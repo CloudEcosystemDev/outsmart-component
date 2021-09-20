@@ -1,0 +1,96 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddaddressesRequest",
+                "required": [
+                    "adr_debtor_nr",
+                    "adr_code",
+                    "adr_cpn_code",
+                    "adr_line_1",
+                    "adr_zip",
+                    "adr_city",
+                    "adr_country",
+                    "adr_remark"
+                ],
+                "type": "object",
+                "properties": {
+                    "adr_debtor_nr": {
+                        "type": "string"
+                    },
+                    "adr_code": {
+                        "type": "string"
+                    },
+                    "adr_cpn_code": {
+                        "type": "string"
+                    },
+                    "adr_line_1": {
+                        "type": "string"
+                    },
+                    "adr_zip": {
+                        "type": "string"
+                    },
+                    "adr_city": {
+                        "type": "string"
+                    },
+                    "adr_country": {
+                        "type": "string"
+                    },
+                    "adr_remark": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "adr_debtor_nr": "2082092",
+                    "adr_code": "1",
+                    "adr_cpn_code": "3",
+                    "adr_line_1": "Zonnebaan 9",
+                    "adr_zip": "3542 AA",
+                    "adr_city": "Utrecht",
+                    "adr_country": "Nederland",
+                    "adr_remark": "Crediteurenadministratie"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "adr_debtor_nr": "2082092",
+                    "adr_code": "1",
+                    "adr_cpn_code": "3",
+                    "adr_line_1": "Zonnebaan 9",
+                    "adr_zip": "3542 AA",
+                    "adr_city": "Utrecht",
+                    "adr_country": "Nederland",
+                    "adr_remark": "Crediteurenadministratie"
+                },
+                {
+                    "adr_debtor_nr": "82",
+                    "adr_code": "2",
+                    "adr_cpn_code": "3",
+                    "adr_line_1": "Zonnebaan 22",
+                    "adr_zip": "3542 EE",
+                    "adr_city": "Utrecht",
+                    "adr_country": "Nederland",
+                    "adr_remark": ""
+                }
+            ]
+        }
+    }
+}

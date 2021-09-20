@@ -1,0 +1,543 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "*/*"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "PostworkordersRequest",
+                "required": [
+                    "WorkorderNo",
+                    "OrderNr",
+                    "ProjectNr",
+                    "ExternProjectNr",
+                    "CustomerName",
+                    "CustomerDebtorNr",
+                    "CustomerStreet",
+                    "CustomerStreetNo",
+                    "CustomerEmail",
+                    "CustomerZIP",
+                    "CustomerCity",
+                    "CustomerContactPerson",
+                    "CustomerPhone",
+                    "CustomerRemark",
+                    "CustomerLatitude",
+                    "CustomerLongitude",
+                    "CustomerNameInvoice",
+                    "CustomerDebtorNrInvoice",
+                    "CustomerStreetInvoice",
+                    "CustomerStreetNoInvoice",
+                    "CustomerEmailInvoice",
+                    "CustomerZIPInvoice",
+                    "CustomerCityInvoice",
+                    "CustomerContactPersonInvoice",
+                    "CustomerPhoneInvoice",
+                    "CustomerRemarkInvoice",
+                    "TypeOfWork",
+                    "WorkDescription",
+                    "PaymentMethod",
+                    "EmployeeNr",
+                    "WorkDate",
+                    "WorkTime",
+                    "WorkEndDate",
+                    "WorkEndTime",
+                    "InternalWorkDescription",
+                    "WorkDuration",
+                    "WorkStatus",
+                    "WorkDeadline",
+                    "PickupPlanning",
+                    "WebPlanning",
+                    "CpnCode",
+                    "CpnCodeInvoice",
+                    "AdrCode",
+                    "ShortWorkDescription",
+                    "Comment",
+                    "ErrorCode",
+                    "ErrorMessage",
+                    "SolutionCode",
+                    "SolutionMessage",
+                    "MinimumHours",
+                    "RoundingAmount",
+                    "Attachments",
+                    "Materials",
+                    "WorkObjects",
+                    "Employees"
+                ],
+                "type": "object",
+                "properties": {
+                    "WorkorderNo": {
+                        "type": "string"
+                    },
+                    "OrderNr": {
+                        "type": "string"
+                    },
+                    "ProjectNr": {
+                        "type": "string"
+                    },
+                    "ExternProjectNr": {
+                        "type": "string"
+                    },
+                    "CustomerName": {
+                        "type": "string"
+                    },
+                    "CustomerDebtorNr": {
+                        "type": "string"
+                    },
+                    "CustomerStreet": {
+                        "type": "string"
+                    },
+                    "CustomerStreetNo": {
+                        "type": "string"
+                    },
+                    "CustomerEmail": {
+                        "type": "string"
+                    },
+                    "CustomerZIP": {
+                        "type": "string"
+                    },
+                    "CustomerCity": {
+                        "type": "string"
+                    },
+                    "CustomerContactPerson": {
+                        "type": "string"
+                    },
+                    "CustomerPhone": {
+                        "type": "string"
+                    },
+                    "CustomerRemark": {
+                        "type": "string"
+                    },
+                    "CustomerLatitude": {
+                        "type": "string"
+                    },
+                    "CustomerLongitude": {
+                        "type": "string"
+                    },
+                    "CustomerNameInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerDebtorNrInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerStreetInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerStreetNoInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerEmailInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerZIPInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerCityInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerContactPersonInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerPhoneInvoice": {
+                        "type": "string"
+                    },
+                    "CustomerRemarkInvoice": {
+                        "type": "string"
+                    },
+                    "TypeOfWork": {
+                        "type": "string"
+                    },
+                    "WorkDescription": {
+                        "type": "string"
+                    },
+                    "PaymentMethod": {
+                        "type": "string"
+                    },
+                    "EmployeeNr": {
+                        "type": "string"
+                    },
+                    "WorkDate": {
+                        "type": "string"
+                    },
+                    "WorkTime": {
+                        "type": "string"
+                    },
+                    "WorkEndDate": {
+                        "type": "string"
+                    },
+                    "WorkEndTime": {
+                        "type": "string"
+                    },
+                    "InternalWorkDescription": {
+                        "type": "string"
+                    },
+                    "WorkDuration": {
+                        "type": "string"
+                    },
+                    "WorkStatus": {
+                        "type": "string"
+                    },
+                    "WorkDeadline": {
+                        "type": "string"
+                    },
+                    "PickupPlanning": {
+                        "type": "string"
+                    },
+                    "WebPlanning": {
+                        "type": "string"
+                    },
+                    "CpnCode": {
+                        "type": "string"
+                    },
+                    "CpnCodeInvoice": {
+                        "type": "string"
+                    },
+                    "AdrCode": {
+                        "type": "string"
+                    },
+                    "ShortWorkDescription": {
+                        "type": "string"
+                    },
+                    "Comment": {
+                        "type": "string"
+                    },
+                    "ErrorCode": {
+                        "type": "string"
+                    },
+                    "ErrorMessage": {
+                        "type": "string"
+                    },
+                    "SolutionCode": {
+                        "type": "string"
+                    },
+                    "SolutionMessage": {
+                        "type": "string"
+                    },
+                    "MinimumHours": {
+                        "type": "string"
+                    },
+                    "RoundingAmount": {
+                        "type": "string"
+                    },
+                    "Attachments": {
+                        "type": "array",
+                        "items": {
+                            "title": "Attachment",
+                            "required": [
+                                "File"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "File": {
+                                    "type": "string"
+                                }
+                            },
+                            "example": {
+                                "File": "http://www.werkbonapp.nl/uploads/documents/1389703238_test.pdf"
+                            }
+                        },
+                        "description": ""
+                    },
+                    "Materials": {
+                        "type": "array",
+                        "items": {
+                            "title": "Material",
+                            "required": [
+                                "MaterialCode",
+                                "MaterialNr",
+                                "MaterialPrice",
+                                "MaterialName",
+                                "MaterialUnit",
+                                "MaterialWarehouseCode",
+                                "MaterialWarrantyCode",
+                                "MaterialDiscountPercentage",
+                                "MaterialOriginalPrice",
+                                "MaterialType",
+                                "MaterialFreeField1",
+                                "MaterialFreeField2",
+                                "MaterialFreeField3",
+                                "MaterialFreeField4",
+                                "MaterialFreeField5"
+                            ],
+                            "type": "object",
+                            "properties": {
+                                "MaterialCode": {
+                                    "type": "string"
+                                },
+                                "MaterialNr": {
+                                    "type": "string"
+                                },
+                                "MaterialPrice": {
+                                    "type": "string"
+                                },
+                                "MaterialName": {
+                                    "type": "string"
+                                },
+                                "MaterialUnit": {
+                                    "type": "string"
+                                },
+                                "MaterialWarehouseCode": {
+                                    "type": "string"
+                                },
+                                "MaterialWarrantyCode": {
+                                    "type": "string"
+                                },
+                                "MaterialDiscountPercentage": {
+                                    "type": "string"
+                                },
+                                "MaterialOriginalPrice": {
+                                    "type": "string"
+                                },
+                                "MaterialType": {
+                                    "type": "string"
+                                },
+                                "MaterialFreeField1": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "MaterialFreeField2": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "MaterialFreeField3": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "MaterialFreeField4": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "MaterialFreeField5": {
+                                    "type": "string",
+                                    "nullable": true
+                                }
+                            },
+                            "example": {
+                                "MaterialCode": "A786878",
+                                "MaterialNr": "2",
+                                "MaterialPrice": "233,00",
+                                "MaterialName": "Kleinmateriaal",
+                                "MaterialUnit": "M2",
+                                "MaterialWarehouseCode": "WAREHOUSE1",
+                                "MaterialWarrantyCode": "WARRANTY1",
+                                "MaterialDiscountPercentage": "100",
+                                "MaterialOriginalPrice": "150",
+                                "MaterialType": "TEstTest",
+                                "MaterialFreeField1": null,
+                                "MaterialFreeField2": null,
+                                "MaterialFreeField3": null,
+                                "MaterialFreeField4": null,
+                                "MaterialFreeField5": null
+                            }
+                        },
+                        "description": ""
+                    },
+                    "WorkObjects": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": ""
+                    },
+                    "Employees": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": ""
+                    }
+                },
+                "example": {
+                    "WorkorderNo": "AB756X",
+                    "OrderNr": "CUSTOMORDER123",
+                    "ProjectNr": "001",
+                    "ExternProjectNr": "EX01",
+                    "CustomerName": "Yoran van Arragon",
+                    "CustomerDebtorNr": "A985785",
+                    "CustomerStreet": "Adres",
+                    "CustomerStreetNo": "5",
+                    "CustomerEmail": "yoran.arragon@provide.nl",
+                    "CustomerZIP": "3454de",
+                    "CustomerCity": "De Meern",
+                    "CustomerContactPerson": "Yoran van Arragon",
+                    "CustomerPhone": "0646321418",
+                    "CustomerRemark": "Geen opmerking",
+                    "CustomerLatitude": "CustomerLatitude",
+                    "CustomerLongitude": "CustomerLongitude",
+                    "CustomerNameInvoice": "John Doe",
+                    "CustomerDebtorNrInvoice": "B985785",
+                    "CustomerStreetInvoice": "De Dompelaar",
+                    "CustomerStreetNoInvoice": "1-D",
+                    "CustomerEmailInvoice": "john.doe@example.com",
+                    "CustomerZIPInvoice": "3454WJ",
+                    "CustomerCityInvoice": "Amsterdam",
+                    "CustomerContactPersonInvoice": "John Doe",
+                    "CustomerPhoneInvoice": "0611111111",
+                    "CustomerRemarkInvoice": "Geen",
+                    "TypeOfWork": "Installatie",
+                    "WorkDescription": "Verschillende werkzaamheden",
+                    "PaymentMethod": "niet van toepassing",
+                    "EmployeeNr": "123",
+                    "WorkDate": "11-06-2013",
+                    "WorkTime": "10:30",
+                    "WorkEndDate": "11-06-2013",
+                    "WorkEndTime": "12:30",
+                    "InternalWorkDescription": "InternalWorkDescription",
+                    "WorkDuration": "0",
+                    "WorkStatus": "WorkStatus",
+                    "WorkDeadline": "WorkDeadline",
+                    "PickupPlanning": "0",
+                    "WebPlanning": "0",
+                    "CpnCode": "CpnCode",
+                    "CpnCodeInvoice": "CpnCodeInvoice",
+                    "AdrCode": "AdrCode",
+                    "ShortWorkDescription": "ShortWorkDescription",
+                    "Comment": "Comment",
+                    "ErrorCode": "ErrorCode",
+                    "ErrorMessage": "ErrorMessage",
+                    "SolutionCode": "SolutionCode",
+                    "SolutionMessage": "SolutionMessage",
+                    "MinimumHours": "0.00",
+                    "RoundingAmount": "0.00",
+                    "Attachments": [
+                        {
+                            "File": "http://www.werkbonapp.nl/uploads/documents/1389703238_test.pdf"
+                        },
+                        {
+                            "File": "http://www.werkbonapp.nl/uploads/documents/201410031416_test.xlsx"
+                        }
+                    ],
+                    "Materials": [
+                        {
+                            "MaterialCode": "A786878",
+                            "MaterialNr": "2",
+                            "MaterialPrice": "233,00",
+                            "MaterialName": "Kleinmateriaal",
+                            "MaterialUnit": "M2",
+                            "MaterialWarehouseCode": "WAREHOUSE1",
+                            "MaterialWarrantyCode": "WARRANTY1",
+                            "MaterialDiscountPercentage": "100",
+                            "MaterialOriginalPrice": "150",
+                            "MaterialType": "TEstTest",
+                            "MaterialFreeField1": null,
+                            "MaterialFreeField2": null,
+                            "MaterialFreeField3": null,
+                            "MaterialFreeField4": null,
+                            "MaterialFreeField5": null
+                        }
+                    ],
+                    "WorkObjects": [
+                        "OBJ001",
+                        "OBJ002"
+                    ],
+                    "Employees": [
+                        "1232"
+                    ]
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "WorkorderNo": "AB756X",
+                    "OrderNr": "CUSTOMORDER123",
+                    "ProjectNr": "001",
+                    "ExternProjectNr": "EX01",
+                    "CustomerName": "Yoran van Arragon",
+                    "CustomerDebtorNr": "A985785",
+                    "CustomerStreet": "Adres",
+                    "CustomerStreetNo": "5",
+                    "CustomerEmail": "yoran.arragon@provide.nl",
+                    "CustomerZIP": "3454de",
+                    "CustomerCity": "De Meern",
+                    "CustomerContactPerson": "Yoran van Arragon",
+                    "CustomerPhone": "0646321418",
+                    "CustomerRemark": "Geen opmerking",
+                    "CustomerLatitude": "CustomerLatitude",
+                    "CustomerLongitude": "CustomerLongitude",
+                    "CustomerNameInvoice": "John Doe",
+                    "CustomerDebtorNrInvoice": "B985785",
+                    "CustomerStreetInvoice": "De Dompelaar",
+                    "CustomerStreetNoInvoice": "1-D",
+                    "CustomerEmailInvoice": "john.doe@example.com",
+                    "CustomerZIPInvoice": "3454WJ",
+                    "CustomerCityInvoice": "Amsterdam",
+                    "CustomerContactPersonInvoice": "John Doe",
+                    "CustomerPhoneInvoice": "0611111111",
+                    "CustomerRemarkInvoice": "Geen",
+                    "TypeOfWork": "Installatie",
+                    "WorkDescription": "Verschillende werkzaamheden",
+                    "PaymentMethod": "niet van toepassing",
+                    "EmployeeNr": "123",
+                    "WorkDate": "11-06-2013",
+                    "WorkTime": "10:30",
+                    "WorkEndDate": "11-06-2013",
+                    "WorkEndTime": "12:30",
+                    "InternalWorkDescription": "InternalWorkDescription",
+                    "WorkDuration": "0",
+                    "WorkStatus": "WorkStatus",
+                    "WorkDeadline": "WorkDeadline",
+                    "PickupPlanning": "0",
+                    "WebPlanning": "0",
+                    "CpnCode": "CpnCode",
+                    "CpnCodeInvoice": "CpnCodeInvoice",
+                    "AdrCode": "AdrCode",
+                    "ShortWorkDescription": "ShortWorkDescription",
+                    "Comment": "Comment",
+                    "ErrorCode": "ErrorCode",
+                    "ErrorMessage": "ErrorMessage",
+                    "SolutionCode": "SolutionCode",
+                    "SolutionMessage": "SolutionMessage",
+                    "MinimumHours": "0.00",
+                    "RoundingAmount": "0.00",
+                    "Attachments": [
+                        {
+                            "File": "http://www.werkbonapp.nl/uploads/documents/1389703238_test.pdf"
+                        },
+                        {
+                            "File": "http://www.werkbonapp.nl/uploads/documents/201410031416_test.xlsx"
+                        }
+                    ],
+                    "Materials": [
+                        {
+                            "MaterialCode": "A786878",
+                            "MaterialNr": "2",
+                            "MaterialPrice": "233,00",
+                            "MaterialName": "Kleinmateriaal",
+                            "MaterialUnit": "M2",
+                            "MaterialWarehouseCode": "WAREHOUSE1",
+                            "MaterialWarrantyCode": "WARRANTY1",
+                            "MaterialDiscountPercentage": "100",
+                            "MaterialOriginalPrice": "150",
+                            "MaterialType": "TEstTest",
+                            "MaterialFreeField1": null,
+                            "MaterialFreeField2": null,
+                            "MaterialFreeField3": null,
+                            "MaterialFreeField4": null,
+                            "MaterialFreeField5": null
+                        }
+                    ],
+                    "WorkObjects": [
+                        "OBJ001",
+                        "OBJ002"
+                    ],
+                    "Employees": [
+                        "1232"
+                    ]
+                }
+            ]
+        }
+    }
+}

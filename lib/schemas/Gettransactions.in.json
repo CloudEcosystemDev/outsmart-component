@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "key": {
+            "required": true,
+            "type": "string",
+            "example": "int_external_transaction_id"
+        },
+        "value": {
+            "required": true,
+            "type": "integer",
+            "format": "int64",
+            "example": 12391823012798
+        },
+        "operator": {
+            "required": true,
+            "type": "string",
+            "example": "eq"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        }
+    }
+}

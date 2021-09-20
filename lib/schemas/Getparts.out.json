@@ -1,0 +1,55 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response34",
+                "required": [
+                    "prt_code",
+                    "prt_name",
+                    "prt_sup_code",
+                    "prt_value",
+                    "prt_image"
+                ],
+                "type": "object",
+                "properties": {
+                    "prt_code": {
+                        "type": "string"
+                    },
+                    "prt_name": {
+                        "type": "string"
+                    },
+                    "prt_sup_code": {
+                        "type": "string"
+                    },
+                    "prt_value": {
+                        "type": "string"
+                    },
+                    "prt_image": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "prt_code": "PRT001",
+                    "prt_name": "Remschijf",
+                    "prt_sup_code": "001",
+                    "prt_value": "80.00",
+                    "prt_image": ""
+                }
+            },
+            "description": ""
+        }
+    }
+}

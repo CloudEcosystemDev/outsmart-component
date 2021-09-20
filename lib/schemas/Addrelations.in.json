@@ -1,0 +1,218 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "test": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 1
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddrelationsRequest",
+                "required": [
+                    "name",
+                    "debtor_number",
+                    "street",
+                    "postal_code",
+                    "city",
+                    "contact",
+                    "phone_number",
+                    "mobile",
+                    "country",
+                    "email",
+                    "latitude",
+                    "longitude",
+                    "kvk_number",
+                    "vat_number",
+                    "language",
+                    "accountmanager",
+                    "pgp_code",
+                    "source",
+                    "debtor_type",
+                    "active",
+                    "lead_phase",
+                    "val_value_2",
+                    "val_value_3",
+                    "val_value_4",
+                    "val_value_5",
+                    "val_value_7",
+                    "val_value_8",
+                    "val_value_9"
+                ],
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "debtor_number": {
+                        "type": "string"
+                    },
+                    "street": {
+                        "type": "string"
+                    },
+                    "postal_code": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "contact": {
+                        "type": "string"
+                    },
+                    "phone_number": {
+                        "type": "string"
+                    },
+                    "mobile": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "string"
+                    },
+                    "longitude": {
+                        "type": "string"
+                    },
+                    "kvk_number": {
+                        "type": "string"
+                    },
+                    "vat_number": {
+                        "type": "string"
+                    },
+                    "language": {
+                        "type": "string"
+                    },
+                    "accountmanager": {
+                        "type": "string"
+                    },
+                    "pgp_code": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "debtor_type": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "lead_phase": {
+                        "type": "string"
+                    },
+                    "val_value_2": {
+                        "type": "string"
+                    },
+                    "val_value_3": {
+                        "type": "string"
+                    },
+                    "val_value_4": {
+                        "type": "string"
+                    },
+                    "val_value_5": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "val_value_7": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "val_value_8": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "val_value_9": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "name": "Installatiebedrijf TAA Daniel",
+                    "debtor_number": "445697",
+                    "street": "Zonnebaan 9",
+                    "postal_code": "3542 EA",
+                    "city": "Utrecht",
+                    "contact": "Feiko Jansma",
+                    "phone_number": "0646321410",
+                    "mobile": "31646013715",
+                    "country": "Nederland",
+                    "email": "steven@werkbonapp.nl",
+                    "latitude": "52.1176287",
+                    "longitude": "5.0386826",
+                    "kvk_number": "4243234478",
+                    "vat_number": "NL012356278.b011",
+                    "language": "nl",
+                    "accountmanager": "",
+                    "pgp_code": "",
+                    "source": null,
+                    "debtor_type": "Klant",
+                    "active": 1,
+                    "lead_phase": "New",
+                    "val_value_2": "team",
+                    "val_value_3": "7",
+                    "val_value_4": "Exact Online",
+                    "val_value_5": null,
+                    "val_value_7": null,
+                    "val_value_8": null,
+                    "val_value_9": null
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "name": "Installatiebedrijf TAA Daniel",
+                    "debtor_number": "445697",
+                    "street": "Zonnebaan 9",
+                    "postal_code": "3542 EA",
+                    "city": "Utrecht",
+                    "contact": "Feiko Jansma",
+                    "phone_number": "0646321410",
+                    "mobile": "31646013715",
+                    "country": "Nederland",
+                    "email": "steven@werkbonapp.nl",
+                    "latitude": "52.1176287",
+                    "longitude": "5.0386826",
+                    "kvk_number": "4243234478",
+                    "vat_number": "NL012356278.b011",
+                    "language": "nl",
+                    "accountmanager": "",
+                    "pgp_code": "",
+                    "source": null,
+                    "debtor_type": "Klant",
+                    "active": 1,
+                    "lead_phase": "New",
+                    "val_value_2": "team",
+                    "val_value_3": "7",
+                    "val_value_4": "Exact Online",
+                    "val_value_5": null,
+                    "val_value_7": null,
+                    "val_value_8": null,
+                    "val_value_9": null
+                }
+            ]
+        }
+    }
+}

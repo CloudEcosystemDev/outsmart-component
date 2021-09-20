@@ -1,0 +1,76 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response47",
+                "required": [
+                    "int_inv_id",
+                    "int_transaction_id",
+                    "int_external_transaction_id",
+                    "int_description",
+                    "int_amount",
+                    "int_type",
+                    "int_type_description",
+                    "int_user",
+                    "int_timestamp"
+                ],
+                "type": "object",
+                "properties": {
+                    "int_inv_id": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "int_transaction_id": {
+                        "type": "string"
+                    },
+                    "int_external_transaction_id": {
+                        "type": "string"
+                    },
+                    "int_description": {
+                        "type": "string"
+                    },
+                    "int_amount": {
+                        "type": "string"
+                    },
+                    "int_type": {
+                        "type": "string"
+                    },
+                    "int_type_description": {
+                        "type": "string"
+                    },
+                    "int_user": {
+                        "type": "string"
+                    },
+                    "int_timestamp": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "int_inv_id": null,
+                    "int_transaction_id": "0000009CSD572CE75E21119",
+                    "int_external_transaction_id": "RABO1212348797128314512435",
+                    "int_description": "Bank transaction",
+                    "int_amount": "100.43",
+                    "int_type": "BANK",
+                    "int_type_description": "",
+                    "int_user": "Fremke",
+                    "int_timestamp": "2018-07-31 11:33:45"
+                }
+            },
+            "description": ""
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response28",
+                "required": [
+                    "veh_license_plate",
+                    "veh_title",
+                    "veh_image",
+                    "veh_brand",
+                    "veh_model",
+                    "veh_type",
+                    "veh_driver",
+                    "veh_driving",
+                    "veh_active"
+                ],
+                "type": "object",
+                "properties": {
+                    "veh_license_plate": {
+                        "type": "string"
+                    },
+                    "veh_title": {
+                        "type": "string"
+                    },
+                    "veh_image": {
+                        "type": "string"
+                    },
+                    "veh_brand": {
+                        "type": "string"
+                    },
+                    "veh_model": {
+                        "type": "string"
+                    },
+                    "veh_type": {
+                        "type": "string"
+                    },
+                    "veh_driver": {
+                        "type": "string"
+                    },
+                    "veh_driving": {
+                        "type": "string"
+                    },
+                    "veh_active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "veh_license_plate": "GN054H",
+                    "veh_title": "Golf GTE",
+                    "veh_image": "https://www.wba-werkbonapp.nl/files/3bc5037d3987d6710de4c34e7481ca9cb072a61a73cc2e8f6a94e8f16986f1f7/cfeff9cb262b39015bb079f9845ce917566cf8415bc88a357dfcb5ca120fe738a9a462326ee251764293f4a4e0341d25b665f0f0bd4f128917a7a3454ea574de6e43fc686ba0975cd0b59f0f7d571c194233a4443112f37714e291d607d9bbd8/cc40a5f5ba28212f2e0ce6336ee211335791ab7126538cb93d954848eb263f14/51fd23f6accc6e933b732cb5330dfbee3931b23cfc3e258dc10620b28ae03210/a0631a2843cd949e574754dd9b4b08894b8a031c8856ea08700c051f48ecfa80fade41486bd3b34119c623eab7304aaee1203ace9e669cae2b2aefa232b1192a/4611bb0557e5077b4f0c0d74ba442f1d52b8a565f6240d9e79e0e804a576b36b8371a6576d1db0517cb93c59f4b96a94f79942bbac94666d61d00ad332b2ff9d/bf60a587b82325aea37899075b2c03f153ad6f687418c1de3c09ddfcf1ad859f/1529056261_images.jpg",
+                    "veh_brand": "Volkswagen",
+                    "veh_model": "Golf",
+                    "veh_type": "GTE",
+                    "veh_driver": "13",
+                    "veh_driving": "1",
+                    "veh_active": "1"
+                }
+            },
+            "description": ""
+        }
+    }
+}

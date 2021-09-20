@@ -1,0 +1,222 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "test": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 1
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "TimeSheet-Hours-AddhoursRequest",
+                "required": [
+                    "hrs_emp_nr",
+                    "hrs_order_nr",
+                    "hrs_order_description",
+                    "hrs_hrt_hour_type",
+                    "hrs_debtor_nr",
+                    "hrs_project_nr",
+                    "hrs_project_activity_nr",
+                    "hrs_date",
+                    "hrs_start",
+                    "hrs_end",
+                    "hrs_break",
+                    "hrs_amount",
+                    "hrs_billable",
+                    "hrs_status",
+                    "hrs_status_project",
+                    "hrs_description",
+                    "hrs_date_created",
+                    "hrs_date_modified",
+                    "hrs_date_approved",
+                    "hrs_date_rejected",
+                    "hrs_created_by",
+                    "hrs_modified_by",
+                    "hrs_approved_by",
+                    "hrs_rejected_by",
+                    "hrs_rejected_reason"
+                ],
+                "type": "object",
+                "properties": {
+                    "hrs_emp_nr": {
+                        "type": "string"
+                    },
+                    "hrs_order_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_order_description": {
+                        "type": "string"
+                    },
+                    "hrs_hrt_hour_type": {
+                        "type": "string"
+                    },
+                    "hrs_debtor_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_project_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_project_activity_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_date": {
+                        "type": "string"
+                    },
+                    "hrs_start": {
+                        "type": "string"
+                    },
+                    "hrs_end": {
+                        "type": "string"
+                    },
+                    "hrs_break": {
+                        "type": "string"
+                    },
+                    "hrs_amount": {
+                        "type": "string"
+                    },
+                    "hrs_billable": {
+                        "type": "string"
+                    },
+                    "hrs_status": {
+                        "type": "string"
+                    },
+                    "hrs_status_project": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_description": {
+                        "type": "string"
+                    },
+                    "hrs_date_created": {
+                        "type": "string"
+                    },
+                    "hrs_date_modified": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_date_approved": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_date_rejected": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_created_by": {
+                        "type": "string"
+                    },
+                    "hrs_modified_by": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_approved_by": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_rejected_by": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hrs_rejected_reason": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "hrs_emp_nr": "13",
+                    "hrs_order_nr": null,
+                    "hrs_order_description": "",
+                    "hrs_hrt_hour_type": "C",
+                    "hrs_debtor_nr": null,
+                    "hrs_project_nr": null,
+                    "hrs_project_activity_nr": null,
+                    "hrs_date": "2020-03-03",
+                    "hrs_start": "09:00:00",
+                    "hrs_end": "17:00:00",
+                    "hrs_break": "0",
+                    "hrs_amount": "8.00",
+                    "hrs_billable": "0",
+                    "hrs_status": "0",
+                    "hrs_status_project": null,
+                    "hrs_description": "",
+                    "hrs_date_created": "2020-02-24 15:31:50",
+                    "hrs_date_modified": null,
+                    "hrs_date_approved": null,
+                    "hrs_date_rejected": null,
+                    "hrs_created_by": "Quooker",
+                    "hrs_modified_by": null,
+                    "hrs_approved_by": null,
+                    "hrs_rejected_by": null,
+                    "hrs_rejected_reason": null
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "hrs_emp_nr": "13",
+                    "hrs_order_nr": null,
+                    "hrs_order_description": "",
+                    "hrs_hrt_hour_type": "C",
+                    "hrs_debtor_nr": null,
+                    "hrs_project_nr": null,
+                    "hrs_project_activity_nr": null,
+                    "hrs_date": "2020-03-03",
+                    "hrs_start": "09:00:00",
+                    "hrs_end": "17:00:00",
+                    "hrs_break": "0",
+                    "hrs_amount": "8.00",
+                    "hrs_billable": "0",
+                    "hrs_status": "0",
+                    "hrs_status_project": null,
+                    "hrs_description": "",
+                    "hrs_date_created": "2020-02-24 15:31:50",
+                    "hrs_date_modified": null,
+                    "hrs_date_approved": null,
+                    "hrs_date_rejected": null,
+                    "hrs_created_by": "Quooker",
+                    "hrs_modified_by": null,
+                    "hrs_approved_by": null,
+                    "hrs_rejected_by": null,
+                    "hrs_rejected_reason": null
+                }
+            ]
+        },
+        "key__": {
+            "required": true,
+            "type": "string",
+            "example": "hrs_emp_nr"
+        },
+        "value__": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 13
+        },
+        "operator__": {
+            "required": true,
+            "type": "string",
+            "example": "eq"
+        }
+    }
+}

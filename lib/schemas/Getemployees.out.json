@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response",
+                "required": [
+                    "firstname",
+                    "lastname",
+                    "number",
+                    "active"
+                ],
+                "type": "object",
+                "properties": {
+                    "firstname": {
+                        "type": "string"
+                    },
+                    "lastname": {
+                        "type": "string"
+                    },
+                    "number": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "firstname": "Jan",
+                    "lastname": "Klaassen",
+                    "number": "123",
+                    "active": "1"
+                }
+            },
+            "description": ""
+        }
+    }
+}

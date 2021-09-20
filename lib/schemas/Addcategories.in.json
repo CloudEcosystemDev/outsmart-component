@@ -1,0 +1,82 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddcategoriesRequest",
+                "required": [
+                    "cat_code",
+                    "cat_name",
+                    "cat_display",
+                    "cat_cat_code",
+                    "cat_image"
+                ],
+                "type": "object",
+                "properties": {
+                    "cat_code": {
+                        "type": "string"
+                    },
+                    "cat_name": {
+                        "type": "string"
+                    },
+                    "cat_display": {
+                        "type": "string"
+                    },
+                    "cat_cat_code": {
+                        "type": "string"
+                    },
+                    "cat_image": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "cat_code": "001",
+                    "cat_name": "Ijzerwaren",
+                    "cat_display": "1",
+                    "cat_cat_code": "",
+                    "cat_image": ""
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "cat_code": "001",
+                    "cat_name": "Ijzerwaren",
+                    "cat_display": "1",
+                    "cat_cat_code": "",
+                    "cat_image": ""
+                },
+                {
+                    "cat_code": "001-002",
+                    "cat_name": "Schroefjes",
+                    "cat_display": "0",
+                    "cat_cat_code": "001",
+                    "cat_image": ""
+                },
+                {
+                    "cat_code": "001-003",
+                    "cat_name": "Boutjes",
+                    "cat_display": "0",
+                    "cat_cat_code": "001",
+                    "cat_image": ""
+                }
+            ]
+        }
+    }
+}

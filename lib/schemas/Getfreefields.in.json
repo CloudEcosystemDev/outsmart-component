@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "operator__": {
+            "required": true,
+            "type": "string",
+            "example": "eq"
+        },
+        "key__": {
+            "required": true,
+            "type": "string",
+            "example": "fld_entity"
+        },
+        "value__": {
+            "required": true,
+            "type": "string",
+            "example": "WORKORDER"
+        }
+    }
+}

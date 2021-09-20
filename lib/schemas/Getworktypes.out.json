@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response22",
+                "required": [
+                    "wrt_name",
+                    "wrt_description",
+                    "wrt_default_minutes",
+                    "wrt_active"
+                ],
+                "type": "object",
+                "properties": {
+                    "wrt_name": {
+                        "type": "string"
+                    },
+                    "wrt_description": {
+                        "type": "string"
+                    },
+                    "wrt_default_minutes": {
+                        "type": "string"
+                    },
+                    "wrt_active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "wrt_name": "Garantie",
+                    "wrt_description": "Garantie werkzaamheden",
+                    "wrt_default_minutes": "60",
+                    "wrt_active": "1"
+                }
+            },
+            "description": ""
+        }
+    }
+}

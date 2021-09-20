@@ -1,0 +1,60 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response27",
+                "required": [
+                    "reg_code",
+                    "reg_name",
+                    "reg_zip_start",
+                    "reg_zip_end",
+                    "reg_city",
+                    "reg_country"
+                ],
+                "type": "object",
+                "properties": {
+                    "reg_code": {
+                        "type": "string"
+                    },
+                    "reg_name": {
+                        "type": "string"
+                    },
+                    "reg_zip_start": {
+                        "type": "string"
+                    },
+                    "reg_zip_end": {
+                        "type": "string"
+                    },
+                    "reg_city": {
+                        "type": "string"
+                    },
+                    "reg_country": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "reg_code": "1",
+                    "reg_name": "Utrecht 32-33",
+                    "reg_zip_start": "3200",
+                    "reg_zip_end": "3500",
+                    "reg_city": "",
+                    "reg_country": ""
+                }
+            },
+            "description": ""
+        }
+    }
+}

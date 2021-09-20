@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddformsRequest",
+                "required": [
+                    "name",
+                    "data",
+                    "template"
+                ],
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "string"
+                    },
+                    "template": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "name": "Checklist",
+                    "data": "{\"fields\":[{\"label\":\"Type zonnepaneel\",\"field_type\":\"radio\",\"required\":true,\"field_options\":{\"options\":[{\"label\":\"a\",\"checked\":false},{\"label\":\"b\",\"checked\":false},{\"label\":\"c\",\"checked\":false}]},\"cid\":\"c2\"}]}",
+                    "template": ""
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "name": "Checklist",
+                    "data": "{\"fields\":[{\"label\":\"Type zonnepaneel\",\"field_type\":\"radio\",\"required\":true,\"field_options\":{\"options\":[{\"label\":\"a\",\"checked\":false},{\"label\":\"b\",\"checked\":false},{\"label\":\"c\",\"checked\":false}]},\"cid\":\"c2\"}]}",
+                    "template": ""
+                },
+                {
+                    "name": "Controle lijst",
+                    "data": "{\"fields\":[{\"label\":\"Jaartal\",\"field_type\":\"text\",\"required\":true,\"field_options\":{\"size\":\"small\",\"value\":\"\"},\"cid\":\"c2\"},{\"label\":\"Staat van het huis goed\",\"field_type\":\"checkboxes\",\"required\":true,\"field_options\":{\"options\":[{\"label\":\"Ja\",\"checked\":false},{\"label\":\"Nee\",\"checked\":false},{\"label\":\"Weet ik niet\",\"checked\":false}]},\"cid\":\"c6\"}]}",
+                    "template": ""
+                },
+                {
+                    "name": "Eigen form",
+                    "data": "{\"fields\":[{\"label\":\"Type pomp\",\"field_type\":\"checkboxes\",\"required\":true,\"field_options\":{\"options\":[{\"label\":\"type A\",\"checked\":false},{\"label\":\"type B\",\"checked\":false},{\"label\":\"type C\",\"checked\":false}]},\"cid\":\"c2\"},{\"label\":\"Serienummer\",\"field_type\":\"text\",\"required\":true,\"field_options\":{\"size\":\"small\",\"value\":\"\"},\"cid\":\"c6\"},{\"label\":\"Dropdown\",\"field_type\":\"dropdown\",\"required\":true,\"field_options\":{\"options\":[{\"label\":\"A\",\"checked\":false},{\"label\":\"B\",\"checked\":false}],\"include_blank_option\":false},\"cid\":\"c10\"}]}",
+                    "template": ""
+                }
+            ]
+        }
+    }
+}

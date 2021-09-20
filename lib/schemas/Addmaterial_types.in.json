@@ -1,0 +1,71 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "Addmaterial_typesRequest",
+                "required": [
+                    "code",
+                    "description",
+                    "app_enabled"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "app_enabled": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": "DELIVERY",
+                    "description": "Delivery",
+                    "app_enabled": "0"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "code": "DELIVERY",
+                    "description": "Delivery",
+                    "app_enabled": "0"
+                },
+                {
+                    "code": "ORDER",
+                    "description": "Order",
+                    "app_enabled": "0"
+                },
+                {
+                    "code": "PICKUP",
+                    "description": "Pick-up",
+                    "app_enabled": "0"
+                },
+                {
+                    "code": "USAGE",
+                    "description": "Usage",
+                    "app_enabled": "0"
+                }
+            ]
+        }
+    }
+}

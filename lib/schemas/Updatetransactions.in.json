@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "UpdatetransactionsRequest",
+                "required": [
+                    "int_inv_id"
+                ],
+                "type": "object",
+                "properties": {
+                    "int_transaction_id": {
+                        "type": "string"
+                    },
+                    "int_inv_id": {
+                        "type": "string"
+                    },
+                    "int_external_transaction_id": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "int_transaction_id": "0000009CSD572CE75E21119",
+                    "int_inv_id": "164"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "int_transaction_id": "0000009CSD572CE75E21119",
+                    "int_inv_id": "164"
+                },
+                {
+                    "int_external_transaction_id": "IZETTLE5415642351431123231",
+                    "int_inv_id": "null"
+                }
+            ]
+        }
+    }
+}

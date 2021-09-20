@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response10",
+                "required": [
+                    "name",
+                    "data",
+                    "template"
+                ],
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "string"
+                    },
+                    "template": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "name": "Checklist",
+                    "data": "{\"fields\":[{\"label\":\"Type zonnepaneel\",\"field_type\":\"radio\",\"required\":true,\"field_options\":{\"options\":[{\"label\":\"a\",\"checked\":false},{\"label\":\"b\",\"checked\":false},{\"label\":\"c\",\"checked\":false}]},\"cid\":\"c2\"}]}",
+                    "template": ""
+                }
+            },
+            "description": ""
+        }
+    }
+}

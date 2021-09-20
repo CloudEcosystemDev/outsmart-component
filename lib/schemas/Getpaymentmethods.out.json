@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response26",
+                "required": [
+                    "pmd_description"
+                ],
+                "type": "object",
+                "properties": {
+                    "pmd_description": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "pmd_description": "Cash"
+                }
+            },
+            "description": ""
+        }
+    }
+}

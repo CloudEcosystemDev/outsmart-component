@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddcontactpersonsRequest",
+                "required": [
+                    "cpn_debtor_nr",
+                    "cpn_code",
+                    "cpn_name",
+                    "cpn_phone",
+                    "cpn_email"
+                ],
+                "type": "object",
+                "properties": {
+                    "cpn_debtor_nr": {
+                        "type": "string"
+                    },
+                    "cpn_code": {
+                        "type": "string"
+                    },
+                    "cpn_name": {
+                        "type": "string"
+                    },
+                    "cpn_phone": {
+                        "type": "string"
+                    },
+                    "cpn_email": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "cpn_debtor_nr": "82",
+                    "cpn_code": "1",
+                    "cpn_name": "Hans",
+                    "cpn_phone": "020 2298144",
+                    "cpn_email": "email@email.com"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "cpn_debtor_nr": "82",
+                    "cpn_code": "1",
+                    "cpn_name": "Hans",
+                    "cpn_phone": "020 2298144",
+                    "cpn_email": "email@email.com"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,240 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response35",
+                "required": [
+                    "obj_code",
+                    "obj_sup_code",
+                    "obj_debiteur_nummer",
+                    "obj_adr_code",
+                    "obj_obj_code",
+                    "obj_image",
+                    "obj_description",
+                    "obj_price",
+                    "obj_floor_level",
+                    "obj_location",
+                    "obj_latitude",
+                    "obj_longitude",
+                    "obj_type",
+                    "obj_model",
+                    "obj_brand",
+                    "obj_date_warranty_expires",
+                    "obj_serialnumber",
+                    "obj_date_last_inspection",
+                    "obj_date_installation",
+                    "obj_freefield_1",
+                    "obj_freefield_2",
+                    "obj_freefield_3",
+                    "obj_freefield_4",
+                    "obj_freefield_5",
+                    "obj_freefield_6",
+                    "obj_freefield_7",
+                    "obj_freefield_8",
+                    "obj_freefield_9",
+                    "obj_freefield_10",
+                    "obj_freefield_11",
+                    "obj_freefield_12",
+                    "obj_freefield_13",
+                    "obj_freefield_14",
+                    "obj_freefield_15",
+                    "obj_freefield_16",
+                    "obj_freefield_17",
+                    "obj_freefield_18",
+                    "obj_freefield_19",
+                    "obj_freefield_20",
+                    "obj_created",
+                    "obj_modified"
+                ],
+                "type": "object",
+                "properties": {
+                    "obj_code": {
+                        "type": "string"
+                    },
+                    "obj_sup_code": {
+                        "type": "string"
+                    },
+                    "obj_debiteur_nummer": {
+                        "type": "string"
+                    },
+                    "obj_adr_code": {
+                        "type": "string"
+                    },
+                    "obj_obj_code": {
+                        "type": "string"
+                    },
+                    "obj_image": {
+                        "type": "string"
+                    },
+                    "obj_description": {
+                        "type": "string"
+                    },
+                    "obj_price": {
+                        "type": "string"
+                    },
+                    "obj_floor_level": {
+                        "type": "string"
+                    },
+                    "obj_location": {
+                        "type": "string"
+                    },
+                    "obj_latitude": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "obj_longitude": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "obj_type": {
+                        "type": "string"
+                    },
+                    "obj_model": {
+                        "type": "string"
+                    },
+                    "obj_brand": {
+                        "type": "string"
+                    },
+                    "obj_date_warranty_expires": {
+                        "type": "string"
+                    },
+                    "obj_serialnumber": {
+                        "type": "string"
+                    },
+                    "obj_date_last_inspection": {
+                        "type": "string"
+                    },
+                    "obj_date_installation": {
+                        "type": "string"
+                    },
+                    "obj_freefield_1": {
+                        "type": "string"
+                    },
+                    "obj_freefield_2": {
+                        "type": "string"
+                    },
+                    "obj_freefield_3": {
+                        "type": "string"
+                    },
+                    "obj_freefield_4": {
+                        "type": "string"
+                    },
+                    "obj_freefield_5": {
+                        "type": "string"
+                    },
+                    "obj_freefield_6": {
+                        "type": "string"
+                    },
+                    "obj_freefield_7": {
+                        "type": "string"
+                    },
+                    "obj_freefield_8": {
+                        "type": "string"
+                    },
+                    "obj_freefield_9": {
+                        "type": "string"
+                    },
+                    "obj_freefield_10": {
+                        "type": "string"
+                    },
+                    "obj_freefield_11": {
+                        "type": "string"
+                    },
+                    "obj_freefield_12": {
+                        "type": "string"
+                    },
+                    "obj_freefield_13": {
+                        "type": "string"
+                    },
+                    "obj_freefield_14": {
+                        "type": "string"
+                    },
+                    "obj_freefield_15": {
+                        "type": "string"
+                    },
+                    "obj_freefield_16": {
+                        "type": "string"
+                    },
+                    "obj_freefield_17": {
+                        "type": "string"
+                    },
+                    "obj_freefield_18": {
+                        "type": "string"
+                    },
+                    "obj_freefield_19": {
+                        "type": "string"
+                    },
+                    "obj_freefield_20": {
+                        "type": "string"
+                    },
+                    "obj_created": {
+                        "type": "string"
+                    },
+                    "obj_modified": {
+                        "type": "string"
+                    },
+                    "obj_order": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "obj_code": "Object 2",
+                    "obj_sup_code": "gfgd",
+                    "obj_debiteur_nummer": "4_548a427a-45e8-4f05-9eff-36c8dd742942",
+                    "obj_adr_code": "",
+                    "obj_obj_code": "ghd",
+                    "obj_image": "no-image.png",
+                    "obj_description": "Object 2",
+                    "obj_price": "0.00",
+                    "obj_floor_level": "0",
+                    "obj_location": "",
+                    "obj_latitude": null,
+                    "obj_longitude": null,
+                    "obj_type": "",
+                    "obj_model": "",
+                    "obj_brand": "sdfds",
+                    "obj_date_warranty_expires": "2017-03-01",
+                    "obj_serialnumber": "dsfs",
+                    "obj_date_last_inspection": "2017-03-01",
+                    "obj_date_installation": "2017-03-01",
+                    "obj_freefield_1": "Merk x",
+                    "obj_freefield_2": "Model y ",
+                    "obj_freefield_3": "11-12-2016",
+                    "obj_freefield_4": "",
+                    "obj_freefield_5": "",
+                    "obj_freefield_6": "",
+                    "obj_freefield_7": "",
+                    "obj_freefield_8": "",
+                    "obj_freefield_9": "",
+                    "obj_freefield_10": "",
+                    "obj_freefield_11": "",
+                    "obj_freefield_12": "",
+                    "obj_freefield_13": "",
+                    "obj_freefield_14": "",
+                    "obj_freefield_15": "",
+                    "obj_freefield_16": "",
+                    "obj_freefield_17": "",
+                    "obj_freefield_18": "",
+                    "obj_freefield_19": "12",
+                    "obj_freefield_20": "",
+                    "obj_created": "0000-00-00 00:00:00",
+                    "obj_modified": "2017-03-02 11:10:44"
+                }
+            },
+            "description": ""
+        }
+    }
+}

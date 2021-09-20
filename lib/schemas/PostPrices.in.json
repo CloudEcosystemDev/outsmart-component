@@ -1,0 +1,1209 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "test": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 1
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "PostPricesRequest",
+                "required": [
+                    "material",
+                    "hourtype",
+                    "date_start",
+                    "date_end",
+                    "debtornr",
+                    "price"
+                ],
+                "type": "object",
+                "properties": {
+                    "material": {
+                        "type": "string"
+                    },
+                    "hourtype": {
+                        "type": "string"
+                    },
+                    "date_start": {
+                        "type": "string"
+                    },
+                    "date_end": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "debtornr": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2013-10-01",
+                    "date_end": "2013-10-18",
+                    "debtornr": "3",
+                    "price": "75.00"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2013-10-01",
+                    "date_end": "2013-10-18",
+                    "debtornr": "3",
+                    "price": "75.00"
+                },
+                {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": "2016-09-12",
+                    "debtornr": "",
+                    "price": "135.00"
+                },
+                {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": "2013-09-30",
+                    "debtornr": "3",
+                    "price": "100.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "C",
+                    "date_start": "2013-10-01",
+                    "date_end": "2013-10-18",
+                    "debtornr": "3",
+                    "price": "75.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "C",
+                    "date_start": "2013-01-01",
+                    "date_end": "2016-09-12",
+                    "debtornr": "",
+                    "price": "135.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "C",
+                    "date_start": "2013-01-01",
+                    "date_end": "2013-09-30",
+                    "debtornr": "3",
+                    "price": "100.00"
+                },
+                {
+                    "material": "INS1",
+                    "hourtype": "",
+                    "date_start": "2016-10-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "IND43007",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": "2019-05-14",
+                    "debtornr": "",
+                    "price": "80.00"
+                },
+                {
+                    "material": "IND43007",
+                    "hourtype": "",
+                    "date_start": "2019-05-15",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "30.00"
+                },
+                {
+                    "material": "IND43007",
+                    "hourtype": "",
+                    "date_start": "2018-06-01",
+                    "date_end": "2019-05-06",
+                    "debtornr": "1010101010257",
+                    "price": "60.00"
+                },
+                {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2016-08-22",
+                    "date_end": null,
+                    "debtornr": "25",
+                    "price": "60.00"
+                },
+                {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2013-10-01",
+                    "date_end": "2013-10-18",
+                    "debtornr": "3",
+                    "price": "75.00"
+                },
+                {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "135.00"
+                },
+                {
+                    "material": "C",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": "2013-09-30",
+                    "debtornr": "3",
+                    "price": "100.00"
+                },
+                {
+                    "material": "V",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "IND43201",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "17.00"
+                },
+                {
+                    "material": "2009",
+                    "hourtype": "",
+                    "date_start": "2017-03-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "230.00"
+                },
+                {
+                    "material": "Test",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "201700005",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "hyisdfuuhylfddhyu",
+                    "hourtype": "",
+                    "date_start": "2018-10-01",
+                    "date_end": "2019-04-29",
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "hyisdfuuhylfddhyu",
+                    "hourtype": "",
+                    "date_start": "2019-04-30",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "14.50"
+                },
+                {
+                    "material": "IND300657",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "24.50"
+                },
+                {
+                    "material": "999999",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "120.00"
+                },
+                {
+                    "material": "OUT30074",
+                    "hourtype": "",
+                    "date_start": "2016-08-22",
+                    "date_end": null,
+                    "debtornr": "25",
+                    "price": "24.95"
+                },
+                {
+                    "material": "OUT30074",
+                    "hourtype": "",
+                    "date_start": "2012-07-02",
+                    "date_end": "2016-11-03",
+                    "debtornr": "",
+                    "price": "49.95"
+                },
+                {
+                    "material": "OUT30074",
+                    "hourtype": "",
+                    "date_start": "2016-11-04",
+                    "date_end": "2016-11-09",
+                    "debtornr": "",
+                    "price": "29.95"
+                },
+                {
+                    "material": "OUT30074",
+                    "hourtype": "",
+                    "date_start": "2016-11-10",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "20.95"
+                },
+                {
+                    "material": "OUT30074",
+                    "hourtype": "",
+                    "date_start": "2008-07-01",
+                    "date_end": "2012-07-01",
+                    "debtornr": "",
+                    "price": "39.95"
+                },
+                {
+                    "material": "PRINTER",
+                    "hourtype": "",
+                    "date_start": "2012-06-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "Testtest",
+                    "hourtype": "",
+                    "date_start": "2018-11-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "testcode",
+                    "hourtype": "",
+                    "date_start": "2017-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "550.00"
+                },
+                {
+                    "material": "testcode3",
+                    "hourtype": "",
+                    "date_start": "2017-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "65.00"
+                },
+                {
+                    "material": "IND300655",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "24.50"
+                },
+                {
+                    "material": "SUP20046",
+                    "hourtype": "",
+                    "date_start": "2016-11-01",
+                    "date_end": "2016-11-01",
+                    "debtornr": "",
+                    "price": "5.75"
+                },
+                {
+                    "material": "SUP20046",
+                    "hourtype": "",
+                    "date_start": "2016-11-02",
+                    "date_end": "2020-02-19",
+                    "debtornr": "",
+                    "price": "5.00"
+                },
+                {
+                    "material": "SUP20046",
+                    "hourtype": "",
+                    "date_start": "2020-02-20",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "5.00"
+                },
+                {
+                    "material": "SUP20046",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": "2016-10-31",
+                    "debtornr": "",
+                    "price": "3.75"
+                },
+                {
+                    "material": "OUT549120",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "799.00"
+                },
+                {
+                    "material": "4",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "Omvor (1234)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "2300.00"
+                },
+                {
+                    "material": "IND43022",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "299.00"
+                },
+                {
+                    "material": "24dsfs",
+                    "hourtype": "",
+                    "date_start": "2018-10-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "330.00"
+                },
+                {
+                    "material": "20091",
+                    "hourtype": "",
+                    "date_start": "2017-03-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "450.00"
+                },
+                {
+                    "material": "0001",
+                    "hourtype": "",
+                    "date_start": "2017-03-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "55.00"
+                },
+                {
+                    "material": "IND300654",
+                    "hourtype": "",
+                    "date_start": "2016-12-13",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "39.00"
+                },
+                {
+                    "material": "IND300654",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": "2018-04-23",
+                    "debtornr": "",
+                    "price": "47.00"
+                },
+                {
+                    "material": "SUP20043",
+                    "hourtype": "",
+                    "date_start": "2020-06-10",
+                    "date_end": null,
+                    "debtornr": "00001",
+                    "price": "1.00"
+                },
+                {
+                    "material": "SUP20043",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": "2020-02-19",
+                    "debtornr": "",
+                    "price": "2.00"
+                },
+                {
+                    "material": "SUP20043",
+                    "hourtype": "",
+                    "date_start": "2020-02-20",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "1.90"
+                },
+                {
+                    "material": "1",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "55.00"
+                },
+                {
+                    "material": "UREN22",
+                    "hourtype": "",
+                    "date_start": "2016-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "80.00"
+                },
+                {
+                    "material": "UREN22",
+                    "hourtype": "",
+                    "date_start": "2017-08-26",
+                    "date_end": null,
+                    "debtornr": "22",
+                    "price": "520.00"
+                },
+                {
+                    "material": "TESTARTIS",
+                    "hourtype": "",
+                    "date_start": "2016-11-14",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "30.00"
+                },
+                {
+                    "material": "TESTARTIS",
+                    "hourtype": "",
+                    "date_start": "2016-11-01",
+                    "date_end": "2016-11-13",
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "6",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "2",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "100.00"
+                },
+                {
+                    "material": "00001",
+                    "hourtype": "",
+                    "date_start": "2017-03-01",
+                    "date_end": "2021-03-04",
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "H",
+                    "hourtype": "",
+                    "date_start": "2013-10-01",
+                    "date_end": "2014-11-09",
+                    "debtornr": "",
+                    "price": "150.00"
+                },
+                {
+                    "material": "H",
+                    "hourtype": "",
+                    "date_start": "2016-11-10",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "150.00"
+                },
+                {
+                    "material": "H",
+                    "hourtype": "",
+                    "date_start": "2014-11-10",
+                    "date_end": "2016-11-09",
+                    "debtornr": "",
+                    "price": "100.00"
+                },
+                {
+                    "material": "00002",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "2.00"
+                },
+                {
+                    "material": "00002",
+                    "hourtype": "",
+                    "date_start": "2019-01-30",
+                    "date_end": null,
+                    "debtornr": "1010101010319",
+                    "price": "1.00"
+                },
+                {
+                    "material": "OUT30055",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "39.95"
+                },
+                {
+                    "material": "OUT30073",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "49.95"
+                },
+                {
+                    "material": "T",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "3.00"
+                },
+                {
+                    "material": "0102",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "780.00"
+                },
+                {
+                    "material": "Zon (123456)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "1230.00"
+                },
+                {
+                    "material": "(laad) 12345",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "2300.00"
+                },
+                {
+                    "material": "OUT30045",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "16.95"
+                },
+                {
+                    "material": "000001",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": "2021-07-26",
+                    "debtornr": "",
+                    "price": "10.00"
+                },
+                {
+                    "material": "PACKDS001",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "Schroefje1",
+                    "hourtype": "",
+                    "date_start": "2016-11-01",
+                    "date_end": "2016-11-13",
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "Schroefje1",
+                    "hourtype": "",
+                    "date_start": "2016-11-14",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.02"
+                },
+                {
+                    "material": "Demo25-08",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "80.00"
+                },
+                {
+                    "material": "445646",
+                    "hourtype": "",
+                    "date_start": "2020-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "10.00"
+                },
+                {
+                    "material": "WOA",
+                    "hourtype": "",
+                    "date_start": "2016-11-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "Demo01",
+                    "hourtype": "",
+                    "date_start": "2017-03-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "220.00"
+                },
+                {
+                    "material": "02323235",
+                    "hourtype": "",
+                    "date_start": "2018-10-01",
+                    "date_end": "2019-04-29",
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "02323235",
+                    "hourtype": "",
+                    "date_start": "2019-04-30",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "150.00"
+                },
+                {
+                    "material": "IND300661",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "61.00"
+                },
+                {
+                    "material": "testcode1",
+                    "hourtype": "",
+                    "date_start": "2017-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "12.00"
+                },
+                {
+                    "material": "TESTARTIR",
+                    "hourtype": "",
+                    "date_start": "2016-11-14",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "10.00"
+                },
+                {
+                    "material": "TESTARTIR",
+                    "hourtype": "",
+                    "date_start": "2016-11-01",
+                    "date_end": "2016-11-13",
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "test100021",
+                    "hourtype": "",
+                    "date_start": "2017-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "02072019",
+                    "hourtype": "",
+                    "date_start": "2019-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "149.99"
+                },
+                {
+                    "material": "02072019",
+                    "hourtype": "",
+                    "date_start": "2019-07-02",
+                    "date_end": "2019-07-04",
+                    "debtornr": "1010101010319",
+                    "price": "50.00"
+                },
+                {
+                    "material": "02072019",
+                    "hourtype": "",
+                    "date_start": "2019-07-04",
+                    "date_end": "2019-08-01",
+                    "debtornr": "1010101010340",
+                    "price": "124.99"
+                },
+                {
+                    "material": "KET1",
+                    "hourtype": "",
+                    "date_start": "2016-10-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "00003",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "(Laad b) 1234",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "2956.00"
+                },
+                {
+                    "material": "TESTARTI2S",
+                    "hourtype": "",
+                    "date_start": "2016-11-01",
+                    "date_end": "2016-11-13",
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "TESTARTI2S",
+                    "hourtype": "",
+                    "date_start": "2016-11-14",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "20.00"
+                },
+                {
+                    "material": "3(zon)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "350.00"
+                },
+                {
+                    "material": "4(zon)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "950.00"
+                },
+                {
+                    "material": "zxdvs",
+                    "hourtype": "",
+                    "date_start": "2018-10-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "13344.00"
+                },
+                {
+                    "material": "uur(1234)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "110.00"
+                },
+                {
+                    "material": "20170002",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "DAG",
+                    "hourtype": "",
+                    "date_start": "2016-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "1.00"
+                },
+                {
+                    "material": "21070001",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "30034039",
+                    "hourtype": "",
+                    "date_start": "2017-03-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "N",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "123O",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "IND43009",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "11.00"
+                },
+                {
+                    "material": "Test2508",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "670.00"
+                },
+                {
+                    "material": "Standaard uurtarief monteur",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "70.00"
+                },
+                {
+                    "material": "201709",
+                    "hourtype": "",
+                    "date_start": "2017-04-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "340.00"
+                },
+                {
+                    "material": "IND43006",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "28.00"
+                },
+                {
+                    "material": "testorder",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "201713",
+                    "hourtype": "",
+                    "date_start": "2017-04-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "9",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "testtest123",
+                    "hourtype": "",
+                    "date_start": "2019-09-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "110.00"
+                },
+                {
+                    "material": "TESTDATUM",
+                    "hourtype": "",
+                    "date_start": "2020-06-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "uur(123)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "110.00"
+                },
+                {
+                    "material": "1(zon)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "676.00"
+                },
+                {
+                    "material": "IND300658",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "24.50"
+                },
+                {
+                    "material": "IND300656",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "24.50"
+                },
+                {
+                    "material": "fzddfzdzf",
+                    "hourtype": "",
+                    "date_start": "2018-10-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "ONBEKEND",
+                    "hourtype": "",
+                    "date_start": "2016-11-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "IND43008",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "44.95"
+                },
+                {
+                    "material": "2(zon)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "510.00"
+                },
+                {
+                    "material": "201700004",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "Zon (12345)",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "1300.00"
+                },
+                {
+                    "material": "Uren",
+                    "hourtype": "",
+                    "date_start": "2016-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "45.00"
+                },
+                {
+                    "material": "123456789",
+                    "hourtype": "",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "20170003",
+                    "hourtype": "",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.00"
+                },
+                {
+                    "material": "IND43021",
+                    "hourtype": "",
+                    "date_start": "2010-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "210.00"
+                },
+                {
+                    "material": "3",
+                    "hourtype": "",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "0.23"
+                },
+                {
+                    "material": "sxdhu;sdffjk",
+                    "hourtype": "",
+                    "date_start": "2019-09-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "10.00"
+                },
+                {
+                    "material": "201710",
+                    "hourtype": "",
+                    "date_start": "2017-04-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "79.95"
+                },
+                {
+                    "material": "",
+                    "hourtype": "Standaard uurtarief monteur",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "70.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "uur(1234)",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "110.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "C",
+                    "date_start": "2016-08-22",
+                    "date_end": null,
+                    "debtornr": "25",
+                    "price": "60.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "C",
+                    "date_start": "2013-10-01",
+                    "date_end": "2013-10-18",
+                    "debtornr": "3",
+                    "price": "75.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "C",
+                    "date_start": "2013-01-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "135.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "C",
+                    "date_start": "2013-01-01",
+                    "date_end": "2013-09-30",
+                    "debtornr": "3",
+                    "price": "100.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "UREN22",
+                    "date_start": "2016-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "80.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "UREN22",
+                    "date_start": "2017-08-26",
+                    "date_end": null,
+                    "debtornr": "22",
+                    "price": "520.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "1",
+                    "date_start": "2017-05-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "55.00"
+                },
+                {
+                    "material": "",
+                    "hourtype": "uur(123)",
+                    "date_start": "2017-02-01",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "110.00"
+                },
+                {
+                    "material": "00001",
+                    "hourtype": "",
+                    "date_start": "2021-03-05",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "4.55"
+                },
+                {
+                    "material": "000001",
+                    "hourtype": "",
+                    "date_start": "2021-07-27",
+                    "date_end": null,
+                    "debtornr": "",
+                    "price": "10.50"
+                },
+                {
+                    "material": "(laad) 12345",
+                    "hourtype": "",
+                    "date_start": "2020-08-12",
+                    "date_end": null,
+                    "debtornr": "24",
+                    "price": "1150.00"
+                }
+            ]
+        }
+    }
+}

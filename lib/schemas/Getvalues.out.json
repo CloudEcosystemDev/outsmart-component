@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response7",
+                "required": [
+                    "code",
+                    "description",
+                    "price",
+                    "unit"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": "00001",
+                    "description": "Omschrijving 1",
+                    "price": "4,55",
+                    "unit": "M2"
+                }
+            },
+            "description": ""
+        }
+    }
+}

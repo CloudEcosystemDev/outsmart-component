@@ -1,0 +1,99 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddmaterialsRequest",
+                "required": [
+                    "code",
+                    "description",
+                    "price",
+                    "unit"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    },
+                    "eancode": {
+                        "type": "string"
+                    },
+                    "barcode": {
+                        "type": "string"
+                    },
+                    "freefield1": {
+                        "type": "string"
+                    },
+                    "freefield2": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "note": {
+                        "type": "string"
+                    },
+                    "vat_code": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": "00001",
+                    "description": "Omschrijving 1",
+                    "price": "4,55",
+                    "unit": "M2",
+                    "eancode": "",
+                    "barcode": "",
+                    "freefield1": "2",
+                    "freefield2": null,
+                    "note": "Test note",
+                    "vat_code": "vat"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "code": "00001",
+                    "description": "Omschrijving 1",
+                    "price": "4,55",
+                    "unit": "M2",
+                    "eancode": "",
+                    "barcode": "",
+                    "freefield1": "2",
+                    "freefield2": null,
+                    "note": "Test note",
+                    "vat_code": "vat"
+                },
+                {
+                    "code": "00012",
+                    "description": "Omschrijving 2",
+                    "price": "2,50",
+                    "unit": "M2"
+                }
+            ]
+        }
+    }
+}

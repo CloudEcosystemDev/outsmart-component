@@ -1,0 +1,86 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddvehiclesRequest",
+                "required": [
+                    "veh_license_plate",
+                    "veh_title",
+                    "veh_brand",
+                    "veh_model",
+                    "veh_type",
+                    "veh_driver",
+                    "veh_driving",
+                    "veh_active"
+                ],
+                "type": "object",
+                "properties": {
+                    "veh_license_plate": {
+                        "type": "string"
+                    },
+                    "veh_title": {
+                        "type": "string"
+                    },
+                    "veh_brand": {
+                        "type": "string"
+                    },
+                    "veh_model": {
+                        "type": "string"
+                    },
+                    "veh_type": {
+                        "type": "string"
+                    },
+                    "veh_driver": {
+                        "type": "string"
+                    },
+                    "veh_driving": {
+                        "type": "string"
+                    },
+                    "veh_active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "veh_license_plate": "GN054H",
+                    "veh_title": "Golf GTE",
+                    "veh_brand": "Volkswagen",
+                    "veh_model": "Golf",
+                    "veh_type": "GTE",
+                    "veh_driver": "13",
+                    "veh_driving": "1",
+                    "veh_active": "1"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "veh_license_plate": "GN054H",
+                    "veh_title": "Golf GTE",
+                    "veh_brand": "Volkswagen",
+                    "veh_model": "Golf",
+                    "veh_type": "GTE",
+                    "veh_driver": "13",
+                    "veh_driving": "1",
+                    "veh_active": "1"
+                }
+            ]
+        }
+    }
+}

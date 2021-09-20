@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddsuppliersRequest",
+                "required": [
+                    "sup_code",
+                    "sup_name",
+                    "sup_image"
+                ],
+                "type": "object",
+                "properties": {
+                    "sup_code": {
+                        "type": "string"
+                    },
+                    "sup_name": {
+                        "type": "string"
+                    },
+                    "sup_image": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "sup_code": "001",
+                    "sup_name": "Pirelli",
+                    "sup_image": ""
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "sup_code": "001",
+                    "sup_name": "Pirelli",
+                    "sup_image": ""
+                },
+                {
+                    "sup_code": "002",
+                    "sup_name": "Volkswagen",
+                    "sup_image": ""
+                }
+            ]
+        }
+    }
+}

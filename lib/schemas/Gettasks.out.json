@@ -1,0 +1,185 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response1",
+                "required": [
+                    "tsk_id",
+                    "tsk_tsk_id",
+                    "tsk_cus_id",
+                    "tsk_type",
+                    "tsk_name",
+                    "tsk_description",
+                    "tsk_reference",
+                    "tsk_category",
+                    "tsk_icon",
+                    "tsk_owner",
+                    "tsk_assigned_to",
+                    "tsk_priority",
+                    "tsk_status",
+                    "tsk_debtor_nr",
+                    "tsk_address_nr",
+                    "tsk_contact_nr",
+                    "tsk_timestamp_due",
+                    "tsk_timestamp_create",
+                    "tsk_timestamp_mutate",
+                    "tsk_timestamp_started",
+                    "tsk_timestamp_completed",
+                    "tsk_timestamp_start",
+                    "tsk_link",
+                    "tsk_project_nr",
+                    "tsk_project_activity_nr",
+                    "tsk_order_nr",
+                    "tsk_invoice_number",
+                    "tsk_quotation_number"
+                ],
+                "type": "object",
+                "properties": {
+                    "tsk_id": {
+                        "type": "string"
+                    },
+                    "tsk_tsk_id": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_cus_id": {
+                        "type": "string"
+                    },
+                    "tsk_type": {
+                        "type": "string"
+                    },
+                    "tsk_name": {
+                        "type": "string"
+                    },
+                    "tsk_description": {
+                        "type": "string"
+                    },
+                    "tsk_reference": {
+                        "type": "string"
+                    },
+                    "tsk_category": {
+                        "type": "string"
+                    },
+                    "tsk_icon": {
+                        "type": "string"
+                    },
+                    "tsk_owner": {
+                        "type": "string"
+                    },
+                    "tsk_assigned_to": {
+                        "type": "string"
+                    },
+                    "tsk_priority": {
+                        "type": "string"
+                    },
+                    "tsk_status": {
+                        "type": "string"
+                    },
+                    "tsk_debtor_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_address_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_contact_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_due": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_create": {
+                        "type": "string"
+                    },
+                    "tsk_timestamp_mutate": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_started": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_completed": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_timestamp_start": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_link": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_project_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_project_activity_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_order_nr": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_invoice_number": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "tsk_quotation_number": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "tsk_id": "1",
+                    "tsk_tsk_id": null,
+                    "tsk_cus_id": "78",
+                    "tsk_type": "TASK",
+                    "tsk_name": "Test",
+                    "tsk_description": "<p>test</p>",
+                    "tsk_reference": "",
+                    "tsk_category": "2",
+                    "tsk_icon": "phone-square",
+                    "tsk_owner": "445697",
+                    "tsk_assigned_to": "",
+                    "tsk_priority": "LOW",
+                    "tsk_status": "COMPLETED",
+                    "tsk_debtor_nr": "876456",
+                    "tsk_address_nr": "",
+                    "tsk_contact_nr": "",
+                    "tsk_timestamp_due": null,
+                    "tsk_timestamp_create": "2021-03-08 14:51:26",
+                    "tsk_timestamp_mutate": "2021-03-12 22:45:08",
+                    "tsk_timestamp_started": "2021-03-10 18:07:28",
+                    "tsk_timestamp_completed": "2021-03-12 21:45:07",
+                    "tsk_timestamp_start": null,
+                    "tsk_link": null,
+                    "tsk_project_nr": null,
+                    "tsk_project_activity_nr": null,
+                    "tsk_order_nr": "WB-2021-00001",
+                    "tsk_invoice_number": "",
+                    "tsk_quotation_number": ""
+                }
+            },
+            "description": ""
+        }
+    }
+}

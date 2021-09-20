@@ -1,0 +1,89 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddhourtypesRequest",
+                "required": [
+                    "code",
+                    "name",
+                    "cost_booking",
+                    "sale_booking",
+                    "sale_price",
+                    "cost_price",
+                    "active"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "cost_booking": {
+                        "type": "string"
+                    },
+                    "sale_booking": {
+                        "type": "string"
+                    },
+                    "sale_price": {
+                        "type": "string"
+                    },
+                    "cost_price": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": "001",
+                    "name": "Normale uren",
+                    "cost_booking": "0",
+                    "sale_booking": "0",
+                    "sale_price": "50.00",
+                    "cost_price": "25.00",
+                    "active": "1"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "code": "001",
+                    "name": "Normale uren",
+                    "cost_booking": "0",
+                    "sale_booking": "0",
+                    "sale_price": "50.00",
+                    "cost_price": "25.00",
+                    "active": "1"
+                },
+                {
+                    "code": "ZK",
+                    "name": "Ziekte",
+                    "cost_booking": "1",
+                    "sale_booking": "1",
+                    "sale_price": "0.00",
+                    "cost_price": "0.00",
+                    "active": "1"
+                }
+            ]
+        }
+    }
+}

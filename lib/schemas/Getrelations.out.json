@@ -1,0 +1,97 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "array",
+            "items": {
+                "title": "Response6",
+                "required": [
+                    "name",
+                    "debtor_number",
+                    "contact",
+                    "phone_number",
+                    "email",
+                    "email_workorder",
+                    "street",
+                    "house_number",
+                    "postal_code",
+                    "city",
+                    "remark",
+                    "latitude",
+                    "longitude"
+                ],
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "debtor_number": {
+                        "type": "string"
+                    },
+                    "contact": {
+                        "type": "string"
+                    },
+                    "phone_number": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "email_workorder": {
+                        "type": "string"
+                    },
+                    "street": {
+                        "type": "string"
+                    },
+                    "house_number": {
+                        "type": "string"
+                    },
+                    "postal_code": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "remark": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "longitude": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                },
+                "example": {
+                    "name": "Naam B.V.",
+                    "debtor_number": "14233Aaa",
+                    "contact": "Dhr. Piet Klaassen",
+                    "phone_number": "0761625345",
+                    "email": "vb@example.nl",
+                    "email_workorder": "vb@example.nl",
+                    "street": "Beatrixlaan",
+                    "house_number": "132",
+                    "postal_code": "1234AB",
+                    "city": "Utrecht",
+                    "remark": "Let op met parkeren hier.",
+                    "latitude": null,
+                    "longitude": null
+                }
+            },
+            "description": ""
+        }
+    }
+}

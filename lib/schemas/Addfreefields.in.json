@@ -1,0 +1,80 @@
+{
+    "type": "object",
+    "properties": {
+        "token": {
+            "required": true,
+            "type": "string",
+            "example": "{{client_token}}"
+        },
+        "software_token": {
+            "required": true,
+            "type": "string",
+            "example": "{{software_token}}"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
+        },
+        "requestBody": {
+            "type": "array",
+            "items": {
+                "title": "AddfreefieldsRequest",
+                "required": [
+                    "fld_entity",
+                    "fld_name",
+                    "fld_type",
+                    "fld_values",
+                    "fld_reference_name",
+                    "fld_order",
+                    "fld_required"
+                ],
+                "type": "object",
+                "properties": {
+                    "fld_entity": {
+                        "type": "string"
+                    },
+                    "fld_name": {
+                        "type": "string"
+                    },
+                    "fld_type": {
+                        "type": "string"
+                    },
+                    "fld_values": {
+                        "type": "string"
+                    },
+                    "fld_reference_name": {
+                        "type": "string"
+                    },
+                    "fld_order": {
+                        "type": "string"
+                    },
+                    "fld_required": {
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "fld_entity": "WORKORDER",
+                    "fld_name": "Veld 11 ",
+                    "fld_type": "TEXT",
+                    "fld_values": "",
+                    "fld_reference_name": "field_1",
+                    "fld_order": "1",
+                    "fld_required": "0"
+                }
+            },
+            "description": "",
+            "example": [
+                {
+                    "fld_entity": "WORKORDER",
+                    "fld_name": "Veld 11 ",
+                    "fld_type": "TEXT",
+                    "fld_values": "",
+                    "fld_reference_name": "field_1",
+                    "fld_order": "1",
+                    "fld_required": "0"
+                }
+            ]
+        }
+    }
+}
