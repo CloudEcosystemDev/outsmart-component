@@ -11,26 +11,26 @@
             "type": "string",
             "example": "{{software_token}}"
         },
-        "Accept": {
-            "required": true,
-            "type": "string",
-            "example": "application/json"
-        },
-        "key__": {
+        "key[]": {
             "required": true,
             "type": "string",
             "example": "zip"
         },
-        "value__": {
+        "value[]": {
             "required": true,
             "type": "integer",
             "format": "int32",
             "example": 3511
         },
-        "operator__": {
+        "operator[]": {
             "required": true,
             "type": "string",
             "example": "li"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
         }
     }
 }

@@ -1,4 +1,10 @@
 {
+    "title": "Response_20061",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -16,5 +22,10 @@
             "type": "string",
             "nullable": true
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": null
     }
 }

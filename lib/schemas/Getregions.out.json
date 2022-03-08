@@ -1,4 +1,10 @@
 {
+    "title": "Response_20045",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -56,5 +62,27 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "reg_code": "1",
+                "reg_name": "Utrecht 32-33",
+                "reg_zip_start": "3200",
+                "reg_zip_end": "3500",
+                "reg_city": "",
+                "reg_country": ""
+            },
+            {
+                "reg_code": "2",
+                "reg_name": "Utrecht",
+                "reg_zip_start": "0",
+                "reg_zip_end": "0",
+                "reg_city": "Utrecht",
+                "reg_country": ""
+            }
+        ]
     }
 }

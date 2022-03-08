@@ -1,4 +1,10 @@
 {
+    "title": "Response_20069",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -41,5 +47,21 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "sup_code": "001",
+                "sup_name": "Pirelli",
+                "sup_image": ""
+            },
+            {
+                "sup_code": "002",
+                "sup_name": "Volkswagen",
+                "sup_image": ""
+            }
+        ]
     }
 }

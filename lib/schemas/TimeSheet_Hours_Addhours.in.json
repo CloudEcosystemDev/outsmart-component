@@ -11,6 +11,22 @@
             "type": "string",
             "example": "{{software_token}}"
         },
+        "key[]": {
+            "required": true,
+            "type": "string",
+            "example": "hrs_emp_nr"
+        },
+        "value[]": {
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "example": 13
+        },
+        "operator[]": {
+            "required": true,
+            "type": "string",
+            "example": "eq"
+        },
         "test": {
             "required": true,
             "type": "integer",
@@ -201,22 +217,6 @@
                     "hrs_rejected_reason": null
                 }
             ]
-        },
-        "key__": {
-            "required": true,
-            "type": "string",
-            "example": "hrs_emp_nr"
-        },
-        "value__": {
-            "required": true,
-            "type": "integer",
-            "format": "int32",
-            "example": 13
-        },
-        "operator__": {
-            "required": true,
-            "type": "string",
-            "example": "eq"
         }
     }
 }

@@ -1,4 +1,10 @@
 {
+    "title": "Response_20073",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -368,5 +374,75 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "inv_id": "164",
+                "inv_worksheet_id": null,
+                "inv_quo_id": null,
+                "inv_inv_id": null,
+                "inv_type": "DEBIT",
+                "inv_currency_code": "EUR",
+                "inv_currency_symbol": "€",
+                "inv_description": "",
+                "inv_invoice_debtor_nr": "1010101010228",
+                "inv_invoice_debtor_name": "van Arragon Bouw",
+                "inv_invoice_debtor_email": "yoran122@hotmail.com",
+                "inv_number_numeric": "1",
+                "inv_number_formatted": "2018-00001",
+                "inv_status": "REMINDER_1",
+                "inv_reference": "",
+                "inv_date": "2018-07-31",
+                "inv_due_date": "2018-08-14",
+                "inv_due_days": "14",
+                "inv_terms": "<p>We verzoeken u vriendelijk het bovenstaande bedrag voor 2018-08-14 te voldoen op onze bankrekening onder vermelding van het factuurnummer 2018-00001.</p>\r\n",
+                "inv_header": "<p>PTS<br />\r\nMandenmakerslaan 58<br />\r\n3454DE, De meern<br />\r\nNederland<br />\r\nKvk: 4243234478<br />\r\nBtw: NL012356278.b01</p>\r\n",
+                "inv_amount": "43.56",
+                "inv_amount_excl": "36.00",
+                "inv_balance": "0.00",
+                "inv_user_create": "Provide",
+                "inv_user_mutate": "",
+                "inv_user_send": "Provide",
+                "inv_timestamp_create": "2018-07-31 07:49:44",
+                "inv_timestamp_mutate": null,
+                "inv_timestamp_payed": null,
+                "inv_timestamp_send": "2018-07-31 07:49:56",
+                "iln_lines": [
+                    {
+                        "iln_id": "1883",
+                        "iln_inv_id": "164",
+                        "iln_order": "0",
+                        "iln_material_code": "00000001",
+                        "iln_material_hourtype": null,
+                        "iln_description": "test kostenplaats",
+                        "iln_amount": "2.00",
+                        "iln_price": "20.00",
+                        "iln_vat_percentage": "21.00",
+                        "iln_discount": "10.00",
+                        "iln_total": "40.00",
+                        "iln_total_discount": "4.00",
+                        "iln_total_vat": "7.56",
+                        "iln_total_excl": "36.00",
+                        "iln_total_incl": "43.56"
+                    }
+                ],
+                "invoice_debtor": {
+                    "ind_name": "van Arragon Bouw",
+                    "ind_debiteur_number": "1010101010228",
+                    "ind_street": "Amerikalaan 639",
+                    "ind_zip": "3526VZ",
+                    "ind_city": "Utrecht",
+                    "ind_country": "",
+                    "ind_contact": "yoran van ar",
+                    "ind_phone": "0646321418",
+                    "ind_email": "yoran122@hotmail.com"
+                },
+                "pdf": "https://www.wba-werkbonapp.nl/files/2ba6c8fd4294926531464e1b73ada1856ffb659bc6904fd7bff9e4932eaece0c/36c5b230e0ff666199f8fbd0b9e1d5be505da32f70520c2dfcb0a06ade001908db7c1d0900c9fb01bed3e0e6354f5aeb4b1ecfa573ce5c6f7b476ebd12e024bc0efd2e450df745ce3118d0413340522c86ad5acfca017e61a7ed31a69b2cf9ee/72ae615104118cbf6549d19046cdc56c65a5a42f10edd21e914cd95394d2d594/608a7ba4894f913f1a218122617194c7f700b19238ff1e23b435aebeaabe977d/92ad26aa8ff0f6c286a2f69e7b4d48ced1bc599b6eef2fe14dbb1cd8743ad3f0688610e69788f4e7c823713a0abfeeebb69d6383442fc934544512bba5e6bdeb/7431a2d509c15d3cebd10ef377f9bde83f1640cf8b5129615c61bbbcb07d5757/272cf7f4892038a4c839d737a63e19ba814b2a649d443e36031eead31e0942bc4d3ee859b1d802210696c7e9db4e8882b1c79aaa4eea87b81d9cd83d90d5888ed6bbc11f432763e9e3bfd6ab350d6a6257830e2d3e9e8fae50317f363830d0c18afc2448eb4d24d9fa753f39effa2701058892d0191b6ac4aa1c5a68f40a9c44eefe275eb378df6a45c7262898879444c6daaacc0f27984ce62a2b552fd04910d0206a977590eca758e035562905f91efe4cc456ac5232dce0d0e31d9c4521292ea486307c50eb4e2d2510df8b5a1b7e41cd584aa3c710024ef1faf6b4d4c78fad5aaa098a03f7b0dfe4d27f18167f7e24ffd9055f6f26aa2bd7518b74946dbc/invoicepdf.php",
+                "ubl": "https://www.wba-werkbonapp.nl/files/f059865c12c1c91bc0bd2fba97d622502076304c9a7cbb322638f96b52aa3e89/570bf48bebda4a3881a08a020c74793cc924ccdcbe62d6bdd5024bb765517490db7c1d0900c9fb01bed3e0e6354f5aeb4b1ecfa573ce5c6f7b476ebd12e024bc0efd2e450df745ce3118d0413340522c86ad5acfca017e61a7ed31a69b2cf9ee/b9cbbbd12b330a8e7dd7d46c1513a2671ccee2d2c0716cf953e2e6751d28e8e5/605fee22609e1a401e420d9cc0707a925930e24cf5f06e19b82ae4372af36e32/60c21fd4c1b746ec723f513373bf61121936d3642b8ab7ea3566487db874d8db688610e69788f4e7c823713a0abfeeebb69d6383442fc934544512bba5e6bdeb/6e4f99f1dd601ad5b1e27234105dd2d6fbcce86d70a188968b87685813516f37/0dc9bf292d736d2d2a5e22a8c1e92b52538579e38ca0ce8f1d260d06e96750ba4d3ee859b1d802210696c7e9db4e8882b1c79aaa4eea87b81d9cd83d90d5888e80fbda037c5eeb269a3dfb68c2d51f778e9bea26e746bd6e48f82ecc5d14b1dfc3e0c512b2036a02115e1f96a68ec47f45dcaec870fdbcaad0ba540db0cd8cf8e15fec4d19b194bd220c523a9f7524a4a4e8e3c5133b07d80f822c8aac04dea2bffff201bfea5a480474f5a393f166d16e1c8ae033f285503d45b1a24acedd90b6dbf0eb15c3ed460b2fc9f98865707939e90ed8ff8511d7978930d7b21b147e/invoicepdf.php"
+            }
+        ]
     }
 }

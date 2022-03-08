@@ -1,4 +1,10 @@
 {
+    "title": "Response_20034",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -46,5 +52,23 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "wrt_name": "Garantie",
+                "wrt_description": "Garantie werkzaamheden",
+                "wrt_default_minutes": "60",
+                "wrt_active": "1"
+            },
+            {
+                "wrt_name": "Installatie",
+                "wrt_description": "Installatie werkzaamheden",
+                "wrt_default_minutes": "720",
+                "wrt_active": "1"
+            }
+        ]
     }
 }

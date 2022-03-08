@@ -1,4 +1,31 @@
 {
+    "title": "Response_200",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
-    "properties": {}
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "integer",
+            "format": "int32"
+        }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": 2
+    }
 }

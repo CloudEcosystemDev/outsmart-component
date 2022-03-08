@@ -11,12 +11,12 @@
             "type": "string",
             "example": "{{software_token}}"
         },
-        "Accept": {
+        "Content-Type": {
             "required": true,
             "type": "string",
             "example": "application/json"
         },
-        "Content_Type": {
+        "Accept": {
             "required": true,
             "type": "string",
             "example": "application/json"

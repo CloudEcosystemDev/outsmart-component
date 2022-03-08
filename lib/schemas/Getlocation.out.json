@@ -1,4 +1,10 @@
 {
+    "title": "Response_20029",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -51,5 +57,18 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "customer_id": "1205",
+                "lat": "50.827024870303866",
+                "long": "6.018792792566475",
+                "employee_nr": "123",
+                "last_seen": "2016-04-06 11:30:00"
+            }
+        ]
     }
 }

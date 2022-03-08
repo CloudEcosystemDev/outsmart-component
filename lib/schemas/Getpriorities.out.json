@@ -1,4 +1,10 @@
 {
+    "title": "Response_20037",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -41,5 +47,21 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "code": "10",
+                "description": "High",
+                "app_enabled": "0"
+            },
+            {
+                "code": "1",
+                "description": "Low",
+                "app_enabled": "1"
+            }
+        ]
     }
 }

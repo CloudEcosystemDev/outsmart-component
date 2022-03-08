@@ -1,4 +1,10 @@
 {
+    "title": "Response_20021",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -66,5 +72,31 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "adr_debtor_nr": "2082092",
+                "adr_code": "1",
+                "adr_cpn_code": "3",
+                "adr_line_1": "Zonnebaan 9",
+                "adr_zip": "3542 AA",
+                "adr_city": "Utrecht",
+                "adr_country": "Nederland",
+                "adr_remark": "Crediteurenadministratie"
+            },
+            {
+                "adr_debtor_nr": "82",
+                "adr_code": "2",
+                "adr_cpn_code": "3",
+                "adr_line_1": "Zonnebaan 22",
+                "adr_zip": "3542 EE",
+                "adr_city": "Utrecht",
+                "adr_country": "Nederland",
+                "adr_remark": ""
+            }
+        ]
     }
 }

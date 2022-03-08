@@ -1,4 +1,31 @@
 {
+    "title": "Response_20061",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
-    "properties": {}
+    "properties": {
+        "code": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "messages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": ""
+        },
+        "response": {
+            "type": "string",
+            "nullable": true
+        }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": null
+    }
 }

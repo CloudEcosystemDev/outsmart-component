@@ -11,25 +11,25 @@
             "type": "string",
             "example": "{{software_token}}"
         },
-        "Accept": {
-            "required": true,
-            "type": "string",
-            "example": "application/json"
-        },
-        "operator__": {
+        "operator[]": {
             "required": true,
             "type": "string",
             "example": "eq"
         },
-        "key__": {
+        "key[]": {
             "required": true,
             "type": "string",
             "example": "fld_entity"
         },
-        "value__": {
+        "value[]": {
             "required": true,
             "type": "string",
             "example": "WORKORDER"
+        },
+        "Accept": {
+            "required": true,
+            "type": "string",
+            "example": "application/json"
         }
     }
 }
