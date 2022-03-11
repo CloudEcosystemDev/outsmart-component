@@ -44,12 +44,12 @@
             "format": "int32",
             "example": 1
         },
-        "Accept": {
+        "Content-Type": {
             "required": true,
             "type": "string",
             "example": "application/json"
         },
-        "Content_Type": {
+        "Accept": {
             "required": true,
             "type": "string",
             "example": "application/json"

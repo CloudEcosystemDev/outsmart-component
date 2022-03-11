@@ -1,4 +1,10 @@
 {
+    "title": "TimeSheet-Hours-Gethours",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -180,5 +186,41 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "hrs_id": "9",
+                "hrs_cus_id": "78",
+                "hrs_emp_nr": "13",
+                "hrs_order_nr": null,
+                "hrs_order_description": null,
+                "hrs_period_id": null,
+                "hrs_hrt_hour_type": "C",
+                "hrs_debtor_nr": null,
+                "hrs_project_nr": null,
+                "hrs_project_activity_nr": null,
+                "hrs_date": "2020-03-03",
+                "hrs_start": "09:00:00",
+                "hrs_end": "17:00:00",
+                "hrs_break": null,
+                "hrs_amount": "8.00",
+                "hrs_billable": "0",
+                "hrs_status": "0",
+                "hrs_status_project": "0",
+                "hrs_description": "",
+                "hrs_date_created": "2020-02-24 15:31:50",
+                "hrs_date_modified": null,
+                "hrs_date_approved": null,
+                "hrs_date_rejected": null,
+                "hrs_created_by": "Administrator",
+                "hrs_modified_by": null,
+                "hrs_approved_by": null,
+                "hrs_rejected_by": null,
+                "hrs_rejected_reason": null
+            }
+        ]
     }
 }

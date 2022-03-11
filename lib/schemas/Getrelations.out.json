@@ -1,4 +1,10 @@
 {
+    "title": "Response_20013",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -93,5 +99,41 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "name": "Naam B.V.",
+                "debtor_number": "14233Aaa",
+                "contact": "Dhr. Piet Klaassen",
+                "phone_number": "0761625345",
+                "email": "vb@example.nl",
+                "email_workorder": "vb@example.nl",
+                "street": "Beatrixlaan",
+                "house_number": "132",
+                "postal_code": "1234AB",
+                "city": "Utrecht",
+                "remark": "Let op met parkeren hier.",
+                "latitude": null,
+                "longitude": null
+            },
+            {
+                "name": "Naam2 BV",
+                "debtor_number": "152346",
+                "contact": "Dhr. Example",
+                "phone_number": "0761654637",
+                "email": "vb@example2.nl",
+                "email_workorder": "vb@example2.nl",
+                "street": "Clauslaan",
+                "house_number": "54",
+                "postal_code": "1234AX",
+                "city": "Amsterdam",
+                "remark": "Let op met parkeren hier.",
+                "latitude": null,
+                "longitude": null
+            }
+        ]
     }
 }

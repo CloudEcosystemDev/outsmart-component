@@ -1,4 +1,10 @@
 {
+    "title": "Response_20080",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -77,5 +83,47 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "int_inv_id": null,
+                "int_transaction_id": "0000005B6962EBA840119",
+                "int_external_transaction_id": "RABO1212348797128314512435",
+                "int_description": "Bank transaction",
+                "int_amount": "100.43",
+                "int_type": "BANK",
+                "int_type_description": "",
+                "int_status": "PROCESSED",
+                "int_user": "OpenAPI",
+                "int_timestamp": "2018-07-31 11:33:45"
+            },
+            {
+                "int_inv_id": "164",
+                "int_transaction_id": "0000005B6962EBA8BD116419",
+                "int_external_transaction_id": "",
+                "int_description": "Cash transaction",
+                "int_amount": "50.00",
+                "int_type": "CASH",
+                "int_type_description": "",
+                "int_status": "PROCESSED",
+                "int_user": "OpenAPI",
+                "int_timestamp": "2018-07-31 13:22:38"
+            },
+            {
+                "int_inv_id": "164",
+                "int_transaction_id": "0000005B6962EBA9B7116419",
+                "int_external_transaction_id": "IZETTLE5415642351431123231",
+                "int_description": "iZettle payment",
+                "int_amount": "121.00",
+                "int_type": "iZettle",
+                "int_type_description": "",
+                "int_status": "PROCESSED",
+                "int_user": "OpenAPI",
+                "int_timestamp": "2018-08-07 11:14:19"
+            }
+        ]
     }
 }

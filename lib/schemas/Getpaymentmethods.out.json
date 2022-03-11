@@ -1,4 +1,10 @@
 {
+    "title": "Response_20043",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -31,5 +37,17 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "pmd_description": "Cash"
+            },
+            {
+                "pmd_description": "Pin"
+            }
+        ]
     }
 }

@@ -1,4 +1,10 @@
 {
+    "title": "Response_2001",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -46,5 +52,23 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "firstname": "Jan",
+                "lastname": "Klaassen",
+                "number": "123",
+                "active": "1"
+            },
+            {
+                "firstname": "Katrien",
+                "lastname": "Klaassen",
+                "number": "129",
+                "active": "1"
+            }
+        ]
     }
 }

@@ -1,4 +1,10 @@
 {
+    "title": "Response_2009",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -61,5 +67,29 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "code": "001",
+                "name": "Normale uren",
+                "cost_booking": "0",
+                "sale_booking": "0",
+                "sale_price": "50.00",
+                "cost_price": "25.00",
+                "active": "1"
+            },
+            {
+                "code": "ZK",
+                "name": "Ziekte",
+                "cost_booking": "1",
+                "sale_booking": "1",
+                "sale_price": "0.00",
+                "cost_price": "0.00",
+                "active": "1"
+            }
+        ]
     }
 }

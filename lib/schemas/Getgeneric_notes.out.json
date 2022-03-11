@@ -1,4 +1,10 @@
 {
+    "title": "Response_20083",
+    "required": [
+        "code",
+        "messages",
+        "response"
+    ],
     "type": "object",
     "properties": {
         "code": {
@@ -51,5 +57,18 @@
             },
             "description": ""
         }
+    },
+    "example": {
+        "code": 200,
+        "messages": [],
+        "response": [
+            {
+                "cpn_debtor_nr": "82",
+                "cpn_code": "1",
+                "cpn_name": "Hans",
+                "cpn_phone": "020 2298144",
+                "cpn_email": "email@email.com"
+            }
+        ]
     }
 }
